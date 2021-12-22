@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* 主內容區塊 */
+
+/* 麵包屑 */
+.breadcrumb{
+	width: 85%;
+	margin:100px auto 0 auto;
+	padding: 10px 0;
+}
+.breadcrumb-list{
+	display: flex;
+}
+li.breadcrumb-item + li.breadcrumb-item::before{
+	content: "/";
+	margin: 0 5px;
+}
+.all-product{
+	display: flex;
+	width: 85%;
+	margin: auto;
+}
+/* 側邊清單 */
+.side-list{
+	width: 20%;
+	min-width: 150px;
+	flex-shrink: 0;
+}
+.product-list h3{
+	font-size: 1.1em;
+	margin: 0.5em 0;
+	font-weight: 600;
+}
+.product-list li{
+	padding: 2% ;
+	margin-left: 1em;
+	border-left:1px #aaa solid;
+	width: 70%;
+}
+
+/* 商品系列 */
+.product-series{
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	align-content: flex-start;
+}
+.item{
+	border-radius:5px;
+	border: #ccc 1px solid;
+	padding: 5px;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+}
+.product-pic{
+	width: 100%;
+	border-radius:5px;
+	position: relative;
+}
+.product-pic::before{
+	content: "";
+	display: block;
+	position: relative;
+	top:0;
+	width: 100%;
+	height: 0;
+	padding-bottom: 75%;
+}
+.product-pic img{
+	border-radius:5px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	object-fit: cover;
+	object-position: center bottom;
+}
+.product-txt{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.product-txt p{
+	flex-grow: 1;
+}
+h3.product-title{
+	text-align: center;
+	font-weight: 700;
+	padding: 0.5em;
+}
+.price-buy{
+	display: flex;
+	flex-wrap: wrap;
+	color: #f15922;
+	justify-content:space-between;
+}
+.price-buy span{
+	font-size: 1.2em;
+	font-weight: 700;
+	padding: 0.5em 0;
+}
+.price-buy button{
+	padding: 0.5em 1em;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-color: #f15922;
+	/* 購物車按鈕字體 特別設定 */
+	font-size: 14px;
+	font-weight: 600;
+}
+.price-buy button:hover{
+	background-color: #c64507;
+}
