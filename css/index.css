@@ -52,7 +52,7 @@ ol.main-content-slides{
 	align-items: center;
 	justify-content: center;
 	/* mix-blend-mode: screen; */
-	font-size:15em;
+	font-size:10em;
 	font-weight: 900;
 
 	backdrop-filter: brightness(100%) blur(2px);
@@ -225,9 +225,9 @@ h2.hot-product-title::after{
 	object-fit: cover;
 	object-position: center center;
 }
-.fruit:hover::before{
+.fruit::before{
 	content: "新鮮果香";
-	background-color: #fc875d;
+	background-color: #fc875d55;
 	margin: auto;
 	line-height: 2em;
 	border-radius: 3px;
@@ -237,9 +237,9 @@ h2.hot-product-title::after{
 	left: 0;
 	right: 0;
 }
-.macha:hover::before{
+.macha::before{
 	content: "抹茶乳酪";
-	background-color: #b7ba6b;
+	background-color: #b7ba6b55;
 	margin: auto;
 	line-height: 2em;
 	border-radius: 3px;
@@ -249,9 +249,9 @@ h2.hot-product-title::after{
 	left: 0;
 	right: 0;
 }
-.classic:hover::before{
+.classic::before{
 	content: "經典重乳酪";
-	background-color: #e8c84c;
+	background-color: #e8c84c55;
 	margin: auto;
 	line-height: 2em;
 	border-radius: 3px;
