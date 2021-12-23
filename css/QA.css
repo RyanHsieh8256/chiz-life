@@ -1,0 +1,52 @@
+@charset "UTF-8";
+main{
+	width: 100%;
+	margin: auto;
+	margin-top: 100px;
+}
+.QAtitle{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+	font-weight: 700;
+	display: flex;
+	padding-top:50px;
+	padding-bottom:50px ;
+	/* 熱門商品區塊邊界空白區域 間距 */
+}
+.QAtitle::before{
+	content: "";
+	border-bottom:#aaa solid 1px;
+	flex-grow:1 ;
+	margin: auto 40px auto 0;
+}
+.QAtitle::after{
+	content: "";
+	border-bottom:#aaa solid 1px;
+	flex-grow:1 ;
+	margin: auto 0 auto 40px;
+}
+.QA-content{
+	width: 85%;
+	margin: auto;
+}
+.item{
+	margin: 10px 0;
+	padding: 2.5%;
+	border: #aaa 1px solid;
+	border-radius: 5px;
+}
+.item:hover{
+	background-color: #fff8cf;
+
+}
+.item h3::after{
+	content: "";
+	display: block;
+	border-bottom: #f15922 3px solid;
+	width: 50px;
+	height: 1em;
+}
+.item p{
+	padding: 1% 0;
+}

@@ -5,7 +5,7 @@ body{
 	/* font-family: 'Noto Serif TC', serif,'Roboto', sans-serif; */
 	font-size: 14px;
 	letter-spacing:0.1em;
-	line-height: 20px;
+	line-height: 1.7;
 	color: #523239;
 }
 h1,h2{
@@ -20,6 +20,17 @@ a{
 	color:#523239 ;
 }
 
+/* .big-bg{
+	background-image: url(../images/all/big-bg-01.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	backdrop-filter: opacity(20%);
+	top:0;
+	width: 100vw;
+} */
+
 /* 導覽列 */
 header{
 	background-color: #fff8cf;
@@ -28,7 +39,7 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	box-shadow: 0 1px 2px 2px #0006 ;
+	box-shadow: 0 1px 2px 2px #0002 ;
 	z-index: 100;
 }
 
@@ -124,7 +135,7 @@ nav{
 .menu li{
 	margin:auto 0 auto 20px;
 }
-.menu li:nth-child(3){
+.menu li:nth-child(4){
 	padding-right: 20px;
 }
 .menu li a:hover{
@@ -135,7 +146,7 @@ nav{
 /* 頁尾 */
 footer{
 	width: 100%;
-	margin:50px auto 0 auto;
+	margin:auto;
 	padding-bottom: 10px;
 	background-color: #fff8cf;
 }

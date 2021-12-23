@@ -2,33 +2,41 @@
 
 /* 品牌介紹區塊 */
 .brand-feature{
-	width: 85%;
+	width: 100%;
 	margin: auto;
 	margin-top: 120px;
 }
 .brand-feature-block{
-	max-width: 1440px;
+	background-color: #fff;
+	width: 85%;
 	margin: auto;
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 }
 
-
-/* 標題影片 */
-.tilte-video{
-	position: relative;
+/* 文字加影片區塊 */
+.brand-story{
 	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.brand-story-video{
+	position: relative;
+	width: 50%;
 	margin-bottom: 20px;
 }
 
-.tilte-video::before{
+.brand-story-video::before{
 	content: "";
 	position: relative;
 	width: 100%;
 	height: 0;
-	padding-bottom: 40%;
+	padding-bottom: 80%;
 	display: block;
 }
-.tilte-bg-video{
+.brand-story-video video{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -36,102 +44,46 @@
 	right: 0;
 	object-fit: cover;
 	object-position: center center;
+	border-radius: 5px;
 }
-.tilte-cover{
-	position:absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
+.brand-story-txt{
+	width: 50%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* mix-blend-mode: screen; */
-	font-size:4em;
-	text-align: center;
-	letter-spacing: 0.1em;
-	line-height: 1.5em;
-	font-weight: 900;
-	backdrop-filter: brightness(50%) blur(2px);
-	color: #fff;
-	transition: .5s;
+	flex-direction: column;
+	line-height: 1.8em;
 }
-
-.tilte-cover:hover{
-	opacity: 0;
+.brand-story-txt h3{
+	font-size: 2em;
+	margin-left: 10%;
+	width: 70%;
+	padding-bottom: 20px;
+	border-bottom: #aaa 1px solid;
 }
-
-
-/* 標題大圖 */
-.brand-story{
-	text-align: center;
-	width: 100%;
-	position: relative;
-
-}
-
-.brand-story-bg{
-	position: relative;
-	width: 100%;
-	filter: brightness(60%);
-}
-.brand-story-bg::before{
-	content: "";
-	position: relative;
-	display: block;
-	width: 100%;
-	padding-bottom: 45%;
-}
-.brand-story-bg img{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-	object-position: center bottom;
+.brand-story-txt p{
+	font-size: 1.2em;
+	padding-top: 20px;
+	margin-left: 10%;
 }
 
 
-.brand-story-title{
-	color: #fff;
-	text-align: center;
-	position: absolute;
-	/* 置中設定 */
-	top:50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.brand-story-title h2{
-	font-size: 2.5em;
-	padding-bottom: 30px;
-	line-height: 50px;
-	border-bottom:#fff 1px solid ;
-	letter-spacing: 2px;
-}
-
-.brand-story-title p{
-	font-size: 20px;
-	height: 100px;
-	line-height: 40px;
-	padding-top:30px ;
-}
 /* 影片 */
 .feature-video{
     position: relative;
 	width:100%;
-    padding-bottom: 56.25%;
 }
 .feature-video::before{
 	position: relative;
 	content: "";
+	display: block;
 	width:100%;
     height: 0;
     padding-bottom: 56.25%;
+	background-color: #523239;
 }
 iframe{
 	position: absolute;
-	background-color: #000;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -186,6 +138,8 @@ p.feature-article-item{
 	width: 100%;
 	object-fit: cover;
 	object-position: center center;
-	border-radius:10px ;
-	box-shadow:0 0 5px 0 #0007 ;
+	border-radius:5px ;
+}
+.big-bg{
+	width: 100%;
 }
