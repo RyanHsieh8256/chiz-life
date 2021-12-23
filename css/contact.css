@@ -3,25 +3,60 @@ main{
 	width: 100%;
 	margin: auto;
 	margin-top: 100px;
-	padding-bottom: 20px;
+	padding: 20px 0;
+	background-image: url(../images/all/big-bg-01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom;
+
 }
 .contact-form{
 	width: 85%;
 	margin: auto;
-	height: 50vh;
-	/* background-image: url(../images/all/big-bg-01.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed; */
+	display: flex;
+	padding-bottom: 20px;
+	align-items: center;
+}
+.contact-form-txt{
+	width: 50%;
+}
+.contact-form-txt h2{
+	width: 50%;
+	border-bottom:1px  #523239 solid;
+	padding-bottom: 2%;
+}
+.contact-form-txt p{
+	padding-top: 2%;
+}
+.contact-form form{
+	width: 50%;
 }
 .contact-form input[type="text"],
 .contact-form input[type="tel"],
 .contact-form input[type="email"],
 .contact-form textarea{
-	background: #aaa3;
+	background: #ff05;
 	border: none;
 	border-radius: 3px;
+	width: 100%;
+	resize:none;
 }
+.contact-form input[type="submit"]{
+	padding: 0.5em 1em;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-color: #f15922;
+	/* 購物車按鈕字體 特別設定 */
+	font-size: 14px;
+	font-weight: 600;
+}
+.contact-form input[type="submit"]:hover{
+	background-color: #c64507;
+}
+
+
 .contact-form-title{
 	padding: 10px 0;
 }
@@ -32,6 +67,7 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+
 }
 .addres{
 	width: 50%;
