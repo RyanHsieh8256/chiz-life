@@ -4,10 +4,15 @@
 .brand-feature{
 	width: 100%;
 	margin: auto;
-	margin-top: 120px;
+	margin-top: 100px;
+	padding-top: 20px;
+	background-image: url(../images/all/big-bg-01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom;
 }
 .brand-feature-block{
-	background-color: #fff;
 	width: 85%;
 	margin: auto;
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
@@ -25,6 +30,7 @@
 .brand-story-video{
 	position: relative;
 	width: 50%;
+	min-width: 384px;
 	margin-bottom: 20px;
 }
 
@@ -103,7 +109,9 @@ iframe{
 	margin: auto;
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 }
-
+.feature-article:nth-of-type(even){
+	flex-direction: row-reverse;
+}
 
 h3.feature-article-title{
 	width: 10%;
@@ -116,12 +124,24 @@ h3.feature-article-title{
 	display: flex;
 	align-items: center;
 }
+
+.feature-article:nth-of-type(even) h3{
+	flex-direction: row-reverse;
+	border-right:none;
+	border-left: #523239 1px solid;
+}
 p.feature-article-item{
 	flex-grow: 1;
 	margin: auto;
 	padding-left: 5%;
 	line-height: 25px;
 	letter-spacing:1px;
+}
+.feature-article:nth-of-type(even) p{
+	text-align: right;
+	flex-grow: 1;
+	padding-left: 0;
+	padding-right: 5%;
 }
 .feature-article span{
 	font-size: 18px;

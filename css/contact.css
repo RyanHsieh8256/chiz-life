@@ -36,7 +36,8 @@ main{
 .contact-form input[type="tel"],
 .contact-form input[type="email"],
 .contact-form textarea{
-	background: #ff05;
+	background: #fff;
+	box-shadow: 0 0 5px 0 #0005;
 	border: none;
 	border-radius: 3px;
 	width: 100%;
