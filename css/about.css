@@ -11,6 +11,8 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center bottom;
+	color: #fff;
+	text-shadow: 0.1em 0.1em 0.3em #000;
 }
 .brand-feature-block{
 	width: 85%;
@@ -63,7 +65,7 @@
 	margin-left: 10%;
 	width: 70%;
 	padding-bottom: 20px;
-	border-bottom: #aaa 1px solid;
+	border-bottom: #fff 1px solid;
 }
 .brand-story-txt p{
 	font-size: 1.2em;
@@ -116,7 +118,7 @@ iframe{
 h3.feature-article-title{
 	width: 10%;
 	writing-mode: vertical-rl;
-	border-right: #523239 1px solid;
+	border-right: #fff 1px solid;
 	margin: auto;
 	font-size: 32px;
 	letter-spacing:10px;
@@ -128,7 +130,7 @@ h3.feature-article-title{
 .feature-article:nth-of-type(even) h3{
 	flex-direction: row-reverse;
 	border-right:none;
-	border-left: #523239 1px solid;
+	border-left: #fff 1px solid;
 }
 p.feature-article-item{
 	flex-grow: 1;

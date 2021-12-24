@@ -49,9 +49,9 @@
                     </div>
                 </div>
                 <ul class="menu">
-                    <li><a href="product-list-clsaaic.html">全部商品</a></li>
-                    <li><a href="product-list-clsaaic.html">新鮮果香</a></li>
-                    <li><a href="product-list-clsaaic.html">抹茶乳酪</a></li>
+                    <li><a href="product-list-all.html">全部商品</a></li>
+                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
                     <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
                     <li><a href="news.html">最新消息</a></li>
                     <li><a href="about.html">關於我們</a></li>
@@ -79,40 +79,30 @@
         <!-- 商品介紹 -->
         <section class="product-info">
             <div class="product-photo">
-                        <input type="radio" name="photo-control" id="photo1" checked>
-                        <input type="radio" name="photo-control" id="photo2">
-                        <input type="radio" name="photo-control" id="photo3">
-                        <input type="radio" name="photo-control" id="photo4">
-
-                    <ol class="main-photo">
-                        <li class="main-photo-item"><img src="images/product/product01.jpg" alt=""></li>
-                        <li class="main-photo-item"><img src="images/product/product02.jpg" alt=""></li>
-                        <li class="main-photo-item"><img src="images/product/product03.jpg" alt=""></li>
-                        <li class="main-photo-item"><img src="images/product/product04.jpg" alt=""></li>
-                    </ol>
+                    <div class="main-photo">
+                        <img src="images/product/product01.jpg" alt=""  id="main-photo">
+                    </div>
 
                     <ol class="photo-list">
                         <li class="photo-list-item">
-                            <label for="photo1"><img src="images/product/product01.jpg" alt=""></label>
+                            <img src="images/product/product01.jpg" alt=" ">
                         </li>
                         <li class="photo-list-item">
-                            <label for="photo2"><img src="images/product/product02.jpg" alt=""></label>
+                            <img src="images/product/product02.jpg" alt=" ">
                         </li>
                         <li class="photo-list-item">
-                            <label for="photo3"><img src="images/product/product03.jpg" alt=""></label>
+                            <img src="images/product/product03.jpg" alt=" ">
                         </li>
                         <li class="photo-list-item">
-                            <label for="photo4"><img src="images/product/product04.jpg" alt=""></label>
+                            <img src="images/product/product04.jpg" alt=" ">
                         </li>
                     </ol>
-
             </div>
-            
             <div class="product-summary">
                 <div class="product-summary-block">
                     <h2 class="product-summary-title">經典重乳酪蛋糕</h2>
-                    <p class="product-summary-description">以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文</p>
-                    <p class="product-summary-event">活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊活動資訊</p>
+                    <p class="product-summary-description">以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕!!!</p>
+                    <p class="product-summary-event">12/11~12/30<br>聖誕節活動開跑，買蛋糕就送聖誕老公公!</p>
                     <p class="product-summary-price">NT$1,200</p>
                     <div class="order-info">
                         <div class="cake-size">
@@ -124,7 +114,7 @@
                             <label class="cake-size-btn" for="size3">圓形:8吋</label>
                         </div>
                         <div class="order-num">
-                            <button class="order-num-btn plus-btn" onclick="minusOne()">-</button><input type="text" name="orderNum" type="number" value="1"><button class="order-num-btn minus-btn" onclick="plusOne()">+</button>
+                            <button class="order-num-btn plus-btn">-</button><input type="text" name="orderNum" type="number" value="1"><button class="order-num-btn minus-btn">+</button>
                         </div>
                     </div>
                     <div class="order-btn">
@@ -167,17 +157,17 @@
         <!-- 更多商品 -->
         <aside>
             <h2 class="other-product-title">相關商品</h2>
-            <div class="other-product-block"> 
+            <div class="other-product">
                 <div class="container"> 
                     <div class="row">
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item">
+                            <div class="item product-card">
                                 <div class="product-pic">
                                     <img src="images/index/product01.jpg" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h3 class="product-title">抹茶起司蛋糕</h3>
-                                    <p>添加高級小山園抹茶，濃郁茶香令人愛不釋手，一口接一口!</p>
+                                    <h3 class="product-title">藍莓起司蛋糕</h3>
+                                    <p>鮮甜藍莓搭配重乳酪，令人愛不釋手，一口接一口!</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
                                         <button>加入購物車</button>
@@ -186,13 +176,13 @@
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item">
+                            <div class="item product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product01.jpg" alt="">
+                                    <img src="images/index/product02.jpeg" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h3 class="product-title">巧克力起司蛋糕</h3>
-                                    <p>香甜牛奶巧克力搭配濃郁起司，香甜可口!</p>
+                                    <h3 class="product-title">小山園抹茶起司蛋糕</h3>
+                                    <p>以高級小山園抹茶製成，濃郁茶香散發濃濃日本風情~</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
                                         <button>加入購物車</button>
@@ -201,13 +191,13 @@
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item">
+                            <div class="item product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product01.jpg" alt="">
+                                    <img src="images/index/product03.jpg" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h3 class="product-title">巧克力起司蛋糕</h3>
-                                    <p>香甜牛奶巧克力搭配濃郁起司，香甜可口!</p>
+                                    <h3 class="product-title">草莓起司蛋糕</h3>
+                                    <p>嚴選新鮮草莓搭配起司蛋糕，香甜口味刺激你的味蕾!</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
                                         <button>加入購物車</button>
@@ -216,9 +206,9 @@
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item">
+                            <div class="item product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product01.jpg" alt="">
+                                    <img src="images/index/product 04.jpg" alt="">
                                 </div>
                                 <div class="product-txt">
                                     <h3 class="product-title">巧克力起司蛋糕</h3>
@@ -232,7 +222,10 @@
                         </div>
                     </div>
                 </div>
-            </div>       
+
+            </div>
+
+
         </aside>
     </main>
 <!-- 頁尾 -->
@@ -258,16 +251,44 @@
         <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.</div>
     </footer>
     <script>
-        
+        // 圖片切換
+        let imgControl;
+        function showLarge(e){
+            let a = e.target;
+            document.getElementById("main-photo").src = a.src;
+            for(i=0;i<imgControl.length;i++){
+                imgControl[i].style.filter = "brightness(100%)";
+            }
+            a.style.filter = "brightness(60%)";
+        }
+
         // 購買數量按鈕
+        let orderNumBtn;
         function plusOne(){
             let a = document.getElementsByName("orderNum");
             a[0].value = parseInt(a[0].value) + 1;
         }
         function minusOne(){
             let a = document.getElementsByName("orderNum");
-            a[0].value = parseInt(a[0].value) - 1;
+            if(a[0].value <= 0){
+                a[0].value = 0;
+            }else{
+                a[0].value = parseInt(a[0].value) - 1;
+            }
         }        
+
+        function init(){
+            orderNumBtn = document.getElementsByClassName("order-num-btn");
+            orderNumBtn[0].onclick = minusOne;
+            orderNumBtn[1].onclick = plusOne;
+
+            imgControl = document.querySelectorAll(".photo-list-item img");
+            for(i=0;i<imgControl.length;i++){
+                imgControl[i].onclick = showLarge;
+            }
+        }
+
+        window.addEventListener("load",init,false)
     </script>
 </body>
 </html>

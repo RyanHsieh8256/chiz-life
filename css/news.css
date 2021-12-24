@@ -176,19 +176,34 @@ h2.news-block-title::after{
 .item{
 	border-radius:5px;
 	border: #ccc 1px solid;
-	padding: 5px;
+	box-sizing: border-box;
+	padding: 1%;
 	height:100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
+
+.txt{
+	padding-left: 2%;
+}
+
+
 .txt h3{
-	font-size: 16px;
+	font-size: 1.3em;
 }
 .txt p{
 	color: #555;
+	font-size: 1.1em;
 }
+
 .pic{
-	width: 100%;
 	border-radius:5px;
 	position: relative;
+	width: 30%;
+	min-width: 250px;
+	flex-shrink: 0;
+	box-sizing: border-box;
 }
 .pic::before{
 	content: "";
@@ -197,7 +212,7 @@ h2.news-block-title::after{
 	top:0;
 	width: 100%;
 	height: 0;
-	padding-bottom: 75%;
+	padding-bottom: 60%;
 }
 .pic img{
 	border-radius:5px;
@@ -206,11 +221,5 @@ h2.news-block-title::after{
 	position: absolute;
 	top: 0;
 	object-fit: cover;
-	object-position: center bottom;
-}
-
-
-.pic img{
-	width: 100%;
-	border-radius:5px;
+	object-position: center center;
 }
