@@ -28,7 +28,7 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 /* 側邊清單 */
 .side-list{
 	width: 20%;
-	min-width: 150px;
+	min-width: 200px;
 	flex-shrink: 0;
 }
 .product-list h3{
