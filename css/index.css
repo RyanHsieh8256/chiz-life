@@ -355,7 +355,7 @@ iframe{
 
 .feature-ariticle-pic{
 	position: relative;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 .feature-ariticle-pic::before{
