@@ -277,6 +277,7 @@ h2.feature-title::after{
 	margin: auto;
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 	align-items: center;
+	justify-content: space-between;
 	color: #fff;
 	text-shadow: 0.1em 0.1em 0.5em #333;
 	padding: 50px 0;
