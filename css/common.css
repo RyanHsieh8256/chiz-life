@@ -7,6 +7,7 @@ body{
 	letter-spacing:0.1em;
 	line-height: 1.7;
 	color: #523239;
+	max-width: 1440px;
 }
 h1,h2{
 	font-size: 26px;
@@ -35,9 +36,12 @@ a{
 header{
 	height: 100px;
 	width: 100%;
+	max-width: 1440px;
+	margin: auto;
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	box-shadow: 0 1px 2px 2px #0002 ;
 	background-color: #fff8cf;
 	z-index: 100;
