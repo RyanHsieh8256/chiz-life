@@ -202,6 +202,7 @@ h3.product-title{
 }
 .price-buy{
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	color: #f15922;
 	justify-content:center;
@@ -211,13 +212,16 @@ h3.product-title{
 	font-weight: 700;
 	margin: 3% auto;
 }
+.price-buy a{
+	width: 100%;
+}
 .price-buy button{
 	width: 100%;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
 	background-color: #f15922;
-	/* 購物車按鈕字體 特別設定 */
+	/* 購物車按鈕字體*/
 	font-size: 14px;
 	font-weight: 600;
 	padding:0.5em  1em;

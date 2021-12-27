@@ -197,30 +197,34 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 	flex-wrap:wrap ;
 	width: 80%;
 }
+.order-btn a{
+	width: 50%;
+	text-align: center;
+}
 .order-btn button{
-	padding: 7px 15px;
+	width: 98%;
+	padding: 3%;
 	color: #fff;
-	border: none;
+	border: 1px #f15922 solid;
 	border-radius: 7px;
 	background-color: #f15922;
-	font-size: 18px;
+	font-size: 1.2em;
 	font-weight: 600;
-	flex-grow: 1;
-	margin: 1% 2% 1% 0;
-}
-.order-btn button:first-child{
-	color: #333;
-	background-color: #fff;
-	border: #333 1px solid;
-	box-sizing: border-box;
-}
-.order-btn button:first-child:hover{
-	background-color: #ddd;
 }
 .order-btn button:hover{
 	background-color: #c64507;
 }
 
+
+.order-btn a:first-child button{
+	background-color: #fff;
+	border: 1px solid #523239;
+	color: #523239;
+	box-sizing: border-box;
+}
+.order-btn a:first-child button:hover{
+	background-color: #ddd;
+}
 
 /* 商品細節 */
 .product-detail{
