@@ -36,7 +36,6 @@ a{
 header{
 	height: 100px;
 	width: 100%;
-	max-width: 1440px;
 	margin: auto;
 	position: fixed;
 	top: 0;
@@ -53,6 +52,7 @@ header{
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	max-width: 1440px;
 }
 .logo{
 	font-size: 0;
