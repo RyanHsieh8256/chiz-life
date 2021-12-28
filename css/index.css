@@ -279,7 +279,7 @@ h2.feature-title::after{
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 	align-items: center;
 	color: #fff;
-	text-shadow: 0.1em 0.1em 0.5em #333;
+	text-shadow: 0.1em 0.1em 0.1em #000;
 	padding: 50px 0;
 }
 .brand-feature-txt h3{
@@ -319,7 +319,7 @@ iframe{
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 	align-items: center;
 	color: #fff;
-	text-shadow: 0.2em 0.2em 0.3em #333;
+	text-shadow: 0.1em 0.1em 0.1em #000;
 }
 .feature-ariticle{
 	padding: 20px 0;

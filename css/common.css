@@ -45,7 +45,6 @@ header{
 	background-color: #fff8cf;
 	z-index: 100;
 }
-
 .nav-block{
 	width:85% ;
 	height: 100%;
@@ -71,15 +70,17 @@ nav{
 	flex-direction: column;
 	flex-grow: 1;
 	align-items: flex-end;
+	justify-content: center;
 }
 /* 登入條 */
 .login-bar{
-	flex-grow: 1;
 	width: 90%;
 	display: flex;
 	justify-content: flex-end;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 20px;
+	padding: 5px 0;
+	flex-grow: 1;
 }
 .login-bar-item{
 	margin:auto 0 auto 10px;
@@ -130,16 +131,20 @@ nav{
 .menu{
 	display: flex;
 	align-items: flex-end;
-	flex-grow: 1;
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	border-top:1px solid #52323950;
+	padding: 5px 0;
+	flex-grow: 1;
 }
 .menu li{
-	margin:auto 0 auto 20px;
+	margin:auto 5px;
+	text-align: center;
+	padding: 5px;
+
 }
 .menu li:nth-child(4){
-	padding-right: 20px;
+	margin-right:40px;
 }
 .menu li a:hover{
 	color: #f15922;
@@ -153,12 +158,13 @@ nav{
 	height:100%;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 5px 0 #aaa7;
+	/* box-shadow: 0 0 5px 0 #aaa7; */
 }
 .product-pic{
 	width: 100%;
 	border-radius:5px;
 	position: relative;
+	overflow: hidden;
 }
 .product-pic::before{
 	content: "";
@@ -181,10 +187,29 @@ nav{
 	transition: 0.5s;
 	transform: translate(-50%,-50%);
 }
-.product-pic img:hover{
-	width: 110%;
-	height: 110%;
+
+.cart-btn{
+	position: absolute;
+	bottom:-100%;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	padding: 5px 0;
+	font-size: 1.2em;
+	background-color: #333a;
+	transition: 0.3s;
 }
+.product-pic:hover img{
+	filter: brightness(70%);
+}
+.product-pic:hover .cart-btn{
+	bottom:0;
+}
+.cart-btn:hover{
+	background-color: #f15922dd;
+}
+
 
 .product-txt{
 	display: flex;
@@ -201,34 +226,10 @@ h3.product-title{
 	padding: 3% 0;
 }
 .price-buy{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
 	color: #f15922;
-	justify-content:center;
-}
-.price-buy span{
 	font-size: 1.3em;
 	font-weight: 700;
-	margin: 3% auto;
-}
-.price-buy a{
-	width: 100%;
-}
-.price-buy button{
-	width: 100%;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	background-color: #f15922;
-	/* 購物車按鈕字體*/
-	font-size: 14px;
-	font-weight: 600;
-	padding:0.5em  1em;
-	margin: auto;
-}
-.price-buy button:hover{
-	background-color: #c64507;
+	margin:auto;
 }
 
 /* 頁尾 */

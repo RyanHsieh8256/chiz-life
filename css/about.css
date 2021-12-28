@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.menu li:nth-child(6) a{
+	color: #f15922;
+}
 
 /* 品牌介紹區塊 */
 .brand-feature{
@@ -12,7 +15,7 @@
 	background-attachment: fixed;
 	background-position: center bottom;
 	color: #fff;
-	text-shadow: 0.1em 0.1em 0.3em #000;
+	text-shadow: 0.1em 0.1em 0.1em #000;
 }
 .brand-feature-block{
 	width: 85%;
@@ -106,7 +109,7 @@ iframe{
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 	align-items: center;
 	color: #fff;
-	text-shadow: 0.2em 0.2em 0.3em #333;
+	text-shadow: 0.1em 0.1em 0.1em #000;
 }
 .feature-ariticle{
 	padding: 20px 0;

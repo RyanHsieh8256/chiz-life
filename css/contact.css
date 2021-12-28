@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.menu li:nth-child(8) a{
+	color: #f15922;
+}
 main{
 	width: 100%;
 	margin: auto;
@@ -13,7 +16,7 @@ main{
 }
 .contact-form{
 	width: 85%;
-	margin: auto;
+	margin:50px auto;
 	display: flex;
 	padding-bottom: 20px;
 	align-items: center;
@@ -63,7 +66,7 @@ main{
 }
 .map{
 	width: 85%;
-	margin: auto;
+	margin:50px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;

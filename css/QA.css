@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.menu li:nth-child(7) a{
+	color: #f15922;
+}
 main{
 	width: 100%;
 	margin: auto;
@@ -31,13 +34,13 @@ main{
 	margin: auto;
 }
 .item{
-	margin: 10px 0;
+	margin: 30px 0;
 	padding: 2.5%;
 	border: #aaa 1px solid;
 	border-radius: 5px;
 }
 .item:hover{
-	background-color: #fff8cf;
+	background-color: #f0f0f0;
 
 }
 .item h3::after{

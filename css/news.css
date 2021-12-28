@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+.menu li:nth-child(5) a{
+	color: #f15922;
+}
 
 /* 主內容區塊 */
 .new-event-banner{
@@ -147,8 +149,12 @@ li.slide:nth-of-type(3){
 }
 
 /* 消息區塊 */
-.news-list{
+.news-list-block{
 	width: 85%;
+	margin: auto;
+}
+.news-list{
+	width: 90%;
 	margin: auto;
 }
 h2.news-block-title{
@@ -182,15 +188,15 @@ h2.news-block-title::after{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content:center;
 }
-
 .txt{
 	padding-left: 2%;
 }
 
-
 .txt h3{
 	font-size: 1.3em;
+	text-align: center;
 }
 .txt p{
 	color: #555;
@@ -200,7 +206,7 @@ h2.news-block-title::after{
 .pic{
 	border-radius:5px;
 	position: relative;
-	width: 30%;
+	width: 100%;
 	min-width: 250px;
 	flex-shrink: 0;
 	box-sizing: border-box;
@@ -222,4 +228,18 @@ h2.news-block-title::after{
 	top: 0;
 	object-fit: cover;
 	object-position: center center;
+}
+
+@media screen and (min-width:768px){
+	.item{
+		flex-wrap:nowrap;
+		justify-content:flex-start;
+	}
+	.pic{
+		width: 30%;
+	}
+	.txt h3{
+		text-align:left;
+	}
+
 }
