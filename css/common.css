@@ -52,7 +52,7 @@ header{
 }
 /* logo區 */
 .logo img{
-	width: 70px;
+	width: 100px;
 	vertical-align: top;
 }
 
@@ -307,9 +307,6 @@ header{
 	.hambergur-li-hidden{
 		display: block;
 	}
-	.logo img{
-		width: 70px;
-	}
 }
 
 @media screen and (min-width:992px) {
@@ -327,7 +324,6 @@ header{
 	}
 	.logo img{
 		width: 150px;
-		vertical-align: top;
 	}
 }
 @media screen and (min-width:1200px) {
