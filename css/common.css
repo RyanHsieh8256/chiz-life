@@ -14,7 +14,7 @@ h1,h2{
 	line-height:40px ;
 }
 h3,h4,h5,h6{
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 a{
 	text-decoration: none;
@@ -52,7 +52,7 @@ header{
 }
 /* logo區 */
 .logo img{
-	width: 100px;
+	width: 120px;
 	vertical-align: top;
 }
 
@@ -234,39 +234,35 @@ header{
 	height: 100%;
 
 	overflow: auto;
-	background: #EAD4A3;
+	background: #F6DE7D;
 	transition: 0.5s ease-in-out;
 	opacity: 0;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 .hamburger-menu-block{
 	width: 100%;
 	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+}
+.hamburger-menu a{
+	color: #523239f0;
+	padding: 5px 0;
+	width: 70%;
+	border-bottom: #fffc 2px solid;
+}
+.hamburger-menu a:hover{
+	border-bottom: #f15922 2px solid;
+}
+
+.hambergur-li-hidden{
 	display: flex;
 	flex-direction: column;
-	padding-top: 60px;
-	
-}
-
-.hamburger-menu a{
-	color: #523239;
-	text-align: center;
-	padding: 5px 0;
-	margin: auto;
-	width: 60%;
-}
-
-.hamburger-menu a:hover{
-	background: #ffdd1f;
-}
-.hambergur-li-hidden{
-	display: block;
+	align-items: center;
 	width: 100%;
 	margin: auto;
-	text-align: center;
-	background-color: #ECA23F;
-	padding: 10px 0;
 }
-
 .hambergur-search-bar{
 	display: flex;
 	align-items: center;
@@ -295,9 +291,11 @@ header{
 	height: 30px;
 	vertical-align: bottom;
 }
-
-
-
+.hambergur-li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 
 @media screen and (min-width:768px) {
@@ -306,6 +304,9 @@ header{
 	}
 	.hambergur-li-hidden{
 		display: block;
+	}
+	.hamburger-menu{
+		width: 40%;
 	}
 }
 
@@ -320,10 +321,13 @@ header{
 		display: flex;
 	}
 	.hamburger-menu{
-		width: 35%;
+		width: 30%;
 	}
 	.logo img{
 		width: 150px;
+	}
+	.hamburger-menu a{
+		width: 40%;
 	}
 }
 @media screen and (min-width:1200px) {
@@ -332,6 +336,9 @@ header{
 	}
 	.hambergur-li-hidden{
 		display: none;
+	}
+	.hamburger-menu{
+		width: 25%;
 	}
 }
 
@@ -345,7 +352,6 @@ header{
 	height:100%;
 	display: flex;
 	flex-direction: column;
-	/* box-shadow: 0 0 5px 0 #aaa7; */
 }
 .product-pic{
 	width: 100%;
@@ -377,25 +383,20 @@ header{
 
 .cart-btn{
 	position: absolute;
-	bottom:-100%;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: auto;
 	width: 100%;
 	text-align: center;
 	border-radius: 5px;
 	color: #fff;
-	padding: 5px 0;
-	font-size: 1.2em;
-	background-color: #333a;
+	padding: 2px 0;
+	font-size: 1em;
+	background-color: #f15922dd;
 	transition: 0.3s;
 }
-.product-pic:hover img{
-	filter: brightness(70%);
-}
-.product-pic:hover .cart-btn{
-	bottom:0;
-}
-.cart-btn:hover{
-	background-color: #f15922dd;
-}
+
 
 
 .product-txt{
@@ -403,6 +404,9 @@ header{
 	flex-grow: 1;
 	flex-direction: column;
 	justify-content: space-between;
+	/* text-align: center; */
+}
+.product-txt h3{
 	text-align: center;
 }
 .product-txt p{
@@ -418,7 +422,36 @@ h3.product-title{
 	font-weight: 700;
 	margin:auto;
 }
+@media screen and (min-width:768px) {
 
+}
+@media screen and (min-width:992px) {
+	.cart-btn{
+		position: absolute;
+		bottom:-100%;
+		width: 100%;
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		padding: 5px 0;
+		font-size: 1.2em;
+		background-color: #333a;
+		transition: 0.3s;
+	}
+	.product-pic:hover img{
+		width: 105%;
+		height: 105%;
+	}
+	.product-pic:hover .cart-btn{
+		bottom:0;
+	}
+	.cart-btn:hover{
+		background-color: #f15922dd;
+	}
+}
+@media screen and (min-width:1200px) {
+
+}
 /* 頁尾 */
 footer{
 	width: 100%;
