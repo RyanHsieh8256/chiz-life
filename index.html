@@ -8,10 +8,13 @@
     <link rel="shortcut icon" href="images/all/logo-col.png">
     <meta name="description" content="超好吃的起司蛋糕">
     <meta name="keyword" content="起司蛋糕,乳酪蛋糕,蛋糕,好吃蛋糕,生日,節慶,慶祝">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/cssreset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/index.css">
+ 
     <!-- 字體 -->
     <!-- 台北黑體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,88 +32,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
-    
+    <style>
+        header{
+            opacity:0;
+            background: none;
+            box-shadow: none;
+        }
+        .nav-block{
+            background: none;
+            box-shadow: none;
+        }
+    </style>
 </head>
 <body>
 <!-- 導覽列 -->
     <header>
-        <div class="nav-block">
-            <h1 class="logo">
-                <a href="index.html"><img src="images\all\logo-row.png" alt="起司人生"></a>
-                Chiz Life起司人生-濃郁人生的起司蛋糕
-            </h1>
-            <nav>
-                <h2 class="nav-title">導覽列</h2>
-                <div class="login-bar">
-                    <div class="login-bar-item login"><a href="">登入</a></div>
-                    <div class="login-bar-item register"><a href="">註冊</a></div>
-                    <div class="login-bar-item shopping-cart"><a href=""><img src="images/all/shopping-cart-icon.png" alt="購物車"></a></div>
-                    <div class="login-bar-item search-block">
-                        <input class="search-bar" type="text" name="search" placeholder="搜尋商品"><button class="search-btn"><img src="images/all/magnifier-icon.png" alt=""></button>
-                    </div>
-                </div>
-                <ul class="menu">
-                    <li><a href="product-list-all.html">全部商品</a></li>
-                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
-                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
-                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
-                    <li><a href="news.html">最新消息</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="QA.html">常見問題</a></li>
-                    <li><a href="contact.html">聯絡資訊</a></li>
+        <nav class="nav-block">
+            <div class="logo">
+                <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
+            </div>
+            <nav class="main-nav">
+                <ul class="txt-menu">
+                    <a href="product-list-fruit.html"><li>新鮮果香</li></a>
+                    <a href="product-list-macha.html"><li>抹茶乳酪</li></a>
+                    <a href="product-list-clsaaic.html"><li>經典重乳酪</li></a>
                 </ul>
+                <ul class="icon-menu">
+                    <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
+                    <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
+                    <li class="search-bar">
+                        <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
+                    <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <button class="hambergur-icon-open" id="hambergurControl"></button>
+                    <ol class="hamburger-menu">
+                        <div class="hamburger-menu-block">
+                            <div class="hambergur-li-hidden">
+                                <li class="hambergur-search-bar">
+                                    <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品">
+                                <button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                                </li>
+                                <a href="product-list-fruit.html"><li>新鮮果香</li></a>
+                                <a href="product-list-macha.html"><li>抹茶乳酪</li></a>
+                                <a href="product-list-clsaaic.html"><li>經典重乳酪</li></a>
+                            </div>
+                            <a href="product-list-all.html"><li>全部商品</li></a>
+                            <a href="news.html"><li>最新消息</li></a>
+                            <a href="about.html"><li>關於我們</li></a>
+                            <a href="QA.html"><li>常見問題</li></a>
+                            <a href="contact.html"><li>聯絡資訊</li></a>
+                        </div>
+                    </ol>
+                </div>
             </nav>
-        </div>
+        </nav>
     </header>
 
     <main>
-<!-- 首頁主畫面 -->
         <section class="main-content">
-            <ol class="main-content-slides">
-                <input type="radio" id="control-1" name="control" checked>
-                <input type="radio" id="control-2" name="control">
-                <input type="radio" id="control-3" name="control">
-
-                <li class="slide tilte-video">
-                    <video class="tilte-bg-video" autoplay muted loop>
+            <div class="owl-carousel owl-theme">
+                <div class="slider-item">
+                    <video class="tilte-bg-video" autoplay muted loop playsinline>
                         <source src="video\index\index-title.mp4">
                     </video>
-                    <h2 class="tilte-cover">Chiz Life<span>Make life a piece of cake</span></h2>
-                </li>
-                <li class="slide"><a href=""><img src="images/all/main-banner-02.jpg" alt=""></a></li>
-                <li class="slide"><a href=""><img src="images/all/main-banner-03.jpg" alt=""></a></li>
-
-                <div class="slid-lr-button  slide1">
-                    <label for="control-3">
-                        <span>❰</span>
-                    </label>
-                    <label for="control-2">
-                        <span>❱</span>
-                    </label>
+                    <h1 class="tilte-cover">Chiz Life<span>Make life a piece of cake</span></h1>
                 </div>
-                <div class="slid-lr-button  slide2">
-                    <label for="control-1">
-                        <span>❰</span>
-                    </label>
-                    <label for="control-3">
-                        <span>❱</span>
-                    </label>
-                </div>
-                <div class="slid-lr-button  slide3">
-                    <label for="control-2">
-                        <span>❰</span>
-                    </label>
-                    <label for="control-1">
-                        <span>❱</span>
-                    </label>
-                </div>
-
-                <div class="controls-visible">
-                    <label for="control-1"></label>
-                    <label for="control-2"></label>
-                    <label for="control-3"></label>
-                </div>
-            </ol>
+                <div class="slider-item"><a href=""><img src="images/all/main-banner-02.jpg" alt=""></a></div>
+                <div class="slider-item"><a href=""><img src="images/all/main-banner-03.jpg" alt=""></a></div>
+            </div>
         </section>
 <!-- 熱門商品 -->
         <section class="hot-product">
@@ -369,5 +360,87 @@
         </ul>
         <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        let animTimer;
+        let animTwoTimer;
+        let headerOpTimer;
+        let clipData;
+        let hambergurMenu;
+        // function anim(){
+        //     clipData = document.getElementById("clipData");
+        //     clipData.style.clipPath = "ellipse(8% 18% at 50% 50%)";
+        //     clearInterval(animTimer);
+        // }
+
+        // function animTwo(){
+        //     clipData = document.getElementById("clipData");
+        //     clipData.style.clipPath = "ellipse(80% 180% at 50% 50%)";
+        //     clearInterval(animTwoTimer);
+        // }
+        
+        function headerOp(){
+            document.getElementsByTagName("header")[0].style.opacity = "1";
+            clearInterval(headerOpTimer);
+        }
+        function hambergurMenuControl(){
+            if(hambergurMenu.className == "hambergur-icon-open"){
+                hambergurMenu.className = "hambergur-icon-close";
+                document.getElementsByClassName("hamburger-menu")[0].style.right = "0";
+                document.getElementsByClassName("hamburger-menu")[0].style.opacity = "1";
+            }else{
+                hambergurMenu.className = "hambergur-icon-open";
+                document.getElementsByClassName("hamburger-menu")[0].style.right = "-100%";
+                document.getElementsByClassName("hamburger-menu")[0].style.opacity = "0";
+            }
+        }
+        function init(){
+            // animTimer = setInterval(anim,1000)
+            // animTwoTimer = setInterval(animTwo,2000)
+            headerOpTimer = setInterval(headerOp,100)
+            hambergurMenu = document.querySelector("#hambergurControl");
+            hambergurMenu.onclick = hambergurMenuControl;
+        }
+        
+        window.addEventListener("load",init,false);
+        // window.addEventListener("scroll", function(){
+        //     document.getElementsByClassName("nav-block")[0].style.background = "orange";
+        // })
+    </script>
+    <script>
+        // 滾輪判斷
+        window.onscroll = function() {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var navBg = document.getElementsByTagName("header")[0];
+            console.log(scrollTop)
+            if(scrollTop >= 260){
+                navBg.style.background = "#fff8cf";
+                navBg.style.boxShadow = "0 2px 2px 0 #0003";
+            }else if(scrollTop < 260){
+                navBg.style.background = "none";
+                navBg.style.boxShadow = "none";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            margin:0,
+            loop:true,
+            autoWidth:true,
+            // autoplay:true,
+            // autoplayTimeout:5000,
+            // autoplayHoverPause:true,
+            items:1
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+        });
+    </script>
 </body>
 </html>

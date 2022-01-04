@@ -37,35 +37,42 @@
 </head>
 <body>
 <!-- 導覽列 -->
-    <header>
-        <div class="nav-block">
-            <h1 class="logo">
-                <a href="index.html"><img src="images\all\logo-row.png" alt="起司人生"></a>
-                Chiz Life起司人生-濃郁人生的起司蛋糕
-            </h1>
-            <nav>
-                <h2 class="nav-title">導覽列</h2>
-                <div class="login-bar">
-                    <div class="login-bar-item login"><a href="">登入</a></div>
-                    <div class="login-bar-item register"><a href="">註冊</a></div>
-                    <div class="login-bar-item shopping-cart"><a href=""><img src="images/all/shopping-cart-icon.png" alt="購物車"></a></div>
-                    <div class="login-bar-item search-block">
-                        <input class="search-bar" type="text" name="search" placeholder="搜尋商品"><button class="search-btn"><img src="images/all/magnifier-icon.png" alt=""></button>
-                    </div>
-                </div>
-                <ul class="menu">
-                    <li><a href="product-list-all.html">全部商品</a></li>
-                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
-                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
-                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
-                    <li><a href="news.html">最新消息</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="QA.html">常見問題</a></li>
-                    <li><a href="contact.html">聯絡資訊</a></li>
-                </ul>
-            </nav>
+<header>
+    <nav class="nav-block">
+        <div class="logo">
+            <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
         </div>
-    </header>
+        <nav class="main-nav">
+            <ul class="txt-menu">
+                <a href="product-list-fruit.html"><li>新鮮果香</li></a>
+                <a href="product-list-macha.html"><li>抹茶乳酪</li></a>
+                <a href="product-list-clsaaic.html"><li>經典重乳酪</li></a>
+            </ul>
+            <ul class="icon-menu">
+                <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
+                <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
+                <li class="search-bar">
+                    <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
+                <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
+                </li>
+                
+            </ul>
+            <div class="hamburger">
+                <button class="hambergur-icon-open" id="hambergurControl"></button>
+                <ol class="hamburger-menu">
+                    <a href="product-list-fruit.html" class="hambergur-li-hidden"><li>新鮮果香</li></a>
+                    <a href="product-list-macha.html" class="hambergur-li-hidden"><li>抹茶乳酪</li></a>
+                    <a href="product-list-clsaaic.html" class="hambergur-li-hidden"><li>經典重乳酪</li></a>
+                    <a href="product-list-all.html"><li>全部商品</li></a>
+                    <a href="news.html"><li>最新消息</li></a>
+                    <a href="about.html"><li>關於我們</li></a>
+                    <a href="QA.html"><li>常見問題</li></a>
+                    <a href="contact.html"><li>聯絡資訊</li></a>
+                </ol>
+            </div>
+        </nav>
+    </nav>
+</header>
         <!-- 麵包屑 -->
         <div class="breadcrumb">
             <ol class="breadcrumb-list">
@@ -176,5 +183,6 @@
         </ul>
         <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.</div>
     </footer>
+    <script src="js/common.js"></script>
 </body>
 </html>
