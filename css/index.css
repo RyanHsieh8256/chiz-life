@@ -179,6 +179,7 @@ p.more{
 /* 品牌介紹區塊 */
 .brand-feature{
 	width: 100%;
+	height: 100%;
 	margin: auto;
 	padding-bottom: 50px;
 	background-image: url(../images/all/big-bg-sm.jpg);
