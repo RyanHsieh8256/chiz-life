@@ -92,8 +92,6 @@ header{
 	border-bottom:#f1592200 3px solid ;
 	padding:0 5px;
 }
-
-
 .icon-menu img{
 	height: 30px;
 	vertical-align: bottom;
@@ -246,13 +244,13 @@ header{
 	padding-top: 60px;
 	text-align: center;
 }
-.hamburger-menu a{
+.hamburger-menu li{
 	color: #523239f0;
 	padding: 5px 0;
 	width: 70%;
 	border-bottom: #fffc 2px solid;
 }
-.hamburger-menu a:hover{
+.hamburger-menu li+li:hover{
 	border-bottom: #f15922 2px solid;
 }
 
@@ -263,27 +261,25 @@ header{
 	width: 100%;
 	margin: auto;
 }
-.hambergur-search-bar{
+
+li.hambergur-search-bar{
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	margin: auto;
+	border: none;
+	height: 100%;
 }
 .hambergur-search-txt{
 	border: none;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	background:#fff;
-	/* display: none; */
 	padding: 0 5px;
-	height: 30px;
-	width: 130px;
+	background: #fff8cf;
+	width: 100%;
+	border-radius: 5px;
 }
 .hambergur-search-btn{
 	border: none;
-	background: #fff;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	background: none;
 	padding: 0;
 }
 .hambergur-search-btn img{
@@ -299,12 +295,6 @@ header{
 
 
 @media screen and (min-width:768px) {
-	.txt-menu{
-		display: none;
-	}
-	.hambergur-li-hidden{
-		display: block;
-	}
 	.hamburger-menu{
 		width: 40%;
 	}
@@ -317,6 +307,9 @@ header{
 	.hambergur-li-hidden{
 		display: none;
 	}
+	.hamburger-menu li:hover{
+		border-bottom: #f15922 2px solid;
+	}
 	.search-bar{
 		display: flex;
 	}
@@ -325,9 +318,6 @@ header{
 	}
 	.logo img{
 		width: 150px;
-	}
-	.hamburger-menu a{
-		width: 40%;
 	}
 }
 @media screen and (min-width:1200px) {
@@ -380,7 +370,10 @@ header{
 	transition: 0.5s;
 	transform: translate(-50%,-50%);
 }
-
+.product-pic:hover img{
+	width: 105%;
+	height: 105%;
+}
 .cart-btn{
 	position: absolute;
 	bottom:5%;
@@ -392,7 +385,7 @@ header{
 	border-radius: 5px;
 	color: #fff;
 	padding: 2px 0;
-	font-size: 1em;
+	font-size: 1.2em;
 	background-color: #0006;
 	transition: 0.3s;
 }
@@ -418,7 +411,7 @@ h3.product-title{
 }
 .price-buy{
 	color: #f15922;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-weight: 700;
 	margin:auto;
 	width: 100%;
@@ -443,10 +436,6 @@ h3.product-title{
 		font-size: 1.2em;
 		background-color: #333a;
 		transition: 0.3s;
-	}
-	.product-pic:hover img{
-		width: 105%;
-		height: 105%;
 	}
 	.product-pic:hover .cart-btn{
 		bottom:0;
