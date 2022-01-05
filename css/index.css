@@ -191,7 +191,7 @@ p.more{
 	background: linear-gradient(to bottom, #fff, #fff0);
 }
 h2.feature-title{
-	width: 85%;
+	width: 95%;
 	margin: auto;
 	text-align: center;
 	font-weight: 700;
@@ -214,10 +214,9 @@ h2.feature-title::after{
 }
 
 
-/* 以下思源宋體 */
 /* 文章 */
 .feature-ariticle-block{
-	width: 85%;
+	width: 95%;
 	margin: auto;
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 	align-items: center;
@@ -328,5 +327,13 @@ iframe{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center bottom;
+	}
+}
+@media screen and (min-width:992px) {
+	h2.feature-title{
+		width: 85%;
+	}
+	.feature-ariticle-block{
+		width: 85%;
 	}
 }
