@@ -185,7 +185,7 @@ p.more{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment:fixed;
-	background-position: center top;
+	background-position: center bottom;
 }
 .linear-bg{
 	background: linear-gradient(to bottom, #fff, #fff0);
