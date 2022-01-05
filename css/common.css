@@ -1,7 +1,4 @@
 @charset "UTF-8";
-html{
-	height: 100%;
-}
 body{
 	margin: 0 auto;
 	font-family: 'Noto Sans TC', sans-serif,'Roboto', sans-serif;
@@ -424,6 +421,12 @@ h3.product-title{
 	font-size: 1.1em;
 	font-weight: 700;
 	margin:auto;
+	width: 100%;
+}
+.price-buy span{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
 }
 @media screen and (min-width:768px) {
 
