@@ -180,13 +180,11 @@ p.more{
 /* 品牌介紹區塊 */
 .brand-feature{
 	width: 100%;
-	height: 100%;
 	margin: auto;
 	padding-bottom: 50px;
 	background-image: url(../images/all/big-bg-sm.jpg);
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment:fixed;
+	background-repeat:no-repeat;
 	background-position: center bottom;
 }
 .linear-bg{
@@ -327,10 +325,9 @@ iframe{
 		margin: auto;
 		padding-bottom: 50px;
 		background-image: url(../images/all/big-bg-01.jpg);
+		background-attachment: fixed;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
 		background-position: center bottom;
-
 	}
 }
