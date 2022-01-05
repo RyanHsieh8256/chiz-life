@@ -182,10 +182,10 @@ p.more{
 	margin: auto;
 	padding-bottom: 50px;
 	background-image: url(../images/all/big-bg-sm.jpg);
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center bottom;
+	background-attachment:fixed;
+	background-position: right bottom;
 }
 .linear-bg{
 	background: linear-gradient(to bottom, #fff, #fff0);
