@@ -321,7 +321,14 @@ iframe{
 }
 @media screen and (min-width:768px) {
 	.brand-feature{
+		width: 100%;
+		margin: auto;
+		padding-bottom: 50px;
 		background-image: url(../images/all/big-bg-01.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
 
 	}
 }
