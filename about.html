@@ -33,48 +33,57 @@
 </head>
 <body>
 <!-- 導覽列 -->
-<header>
-    <nav class="nav-block">
-        <div class="logo">
-            <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
-        </div>
-        <nav class="main-nav">
-            <ul class="txt-menu">
-                <a href="product-list-fruit.html"><li>新鮮果香</li></a>
-                <a href="product-list-macha.html"><li>抹茶乳酪</li></a>
-                <a href="product-list-clsaaic.html"><li>經典重乳酪</li></a>
-            </ul>
-            <ul class="icon-menu">
-                <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
-                <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
-                <li class="search-bar">
-                    <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
-                <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
-                </li>
-                
-            </ul>
-            <div class="hamburger">
-                <button class="hambergur-icon-open" id="hambergurControl"></button>
-                <ol class="hamburger-menu">
-                    <a href="product-list-fruit.html" class="hambergur-li-hidden"><li>新鮮果香</li></a>
-                    <a href="product-list-macha.html" class="hambergur-li-hidden"><li>抹茶乳酪</li></a>
-                    <a href="product-list-clsaaic.html" class="hambergur-li-hidden"><li>經典重乳酪</li></a>
-                    <a href="product-list-all.html"><li>全部商品</li></a>
-                    <a href="news.html"><li>最新消息</li></a>
-                    <a href="about.html"><li>關於我們</li></a>
-                    <a href="QA.html"><li>常見問題</li></a>
-                    <a href="contact.html"><li>聯絡資訊</li></a>
-                </ol>
+    <header>
+        <nav class="nav-block">
+            <div class="logo">
+                <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
             </div>
+            <nav class="main-nav">
+                <ul class="txt-menu">
+                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                </ul>
+                <ul class="icon-menu">
+                    <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
+                    <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
+                    <li class="search-bar">
+                        <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
+                    <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <button class="hambergur-icon-open" id="hambergurControl"></button>
+                    <div class="hamburger-menu">
+                        <div class="hamburger-menu-block">
+                            <ol class="hambergur-li-hidden">
+                                <li class="hambergur-search-bar">
+                                    <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品">
+                                <button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                                </li>
+                                <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                                <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                                <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                            </ol>
+                            <ol class="hambergur-li">                               
+                                <li><a href="product-list-all.html">全部商品</a></li>
+                                <li><a href="news.html">最新消息</a></li>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li><a href="QA.html">常見問題</a></li>
+                                <li><a href="contact.html">聯絡資訊</a></li>                               
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </nav>
-    </nav>
-</header>
+    </header>
 <!-- 品牌簡介 -->
         <main class="brand-feature">
             <section class="brand-feature-block">
                 <section class="brand-story">
                     <div class="brand-story-video">
-                        <video autoplay muted loop>
+                        <video autoplay muted loop playsinline>
                             <source src="video/about/make-cake.mp4">
                         </video>                        
                     </div>
@@ -104,16 +113,12 @@
                             <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
                                 <h3 class="ariticle-txt-title">嚴選食材</h3>
                                 <p class="ariticle-txt"><span>頂級高級進口乳酪</span><br>
-                                    為了提供顧客最好的口感<br>
-                                    我們堅持使用嚴選的進口原料<br>
-                                    也就是好事多購買的外國乳酪<br>
-                                    並堅持把關食材的新鮮度<br>
-                                    讓顧客能吃得安心與開心<br>
+                                    為了提供顧客最好的口感，我們堅持使用嚴選的進口原料，也就是好事多購買的外國乳酪，並堅持把關食材的新鮮度，讓顧客能吃得安心與開心
                                 </p>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <div class="feature-ariticle-pic">
-                                    <img src="images/index/cheese.jpg" alt="">
+                                    <img src="images/index/cheese.jpg" alt="嚴選食材">
                                 </div>
                             </div>
                         </article>
@@ -121,15 +126,12 @@
                             <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
                                 <h3 class="ariticle-txt-title">頂級手藝</h3>
                                 <p class="ariticle-txt"><span>冰其林3星甜點師 打造黃金比例</span><br>
-                                    由長期旅居國外的甜點師領軍研發<br>
-                                    打造完美黃金比例<br>
-                                    讓顧客品嘗到人間美味<br>
-                                    人生至福 莫過於此<br>
+                                    由長期旅居國外的甜點師領軍研發，打造完美黃金比例，讓顧客品嘗到人間美味，人生至福 莫過於此
                                 </p>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <div class="feature-ariticle-pic">
-                                    <img src="images/index/kitchen.jpg" alt="">
+                                    <img src="images/index/kitchen.jpg" alt="頂級手藝">
                                 </div>
                             </div>
                         </article>
@@ -137,21 +139,17 @@
                             <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
                                 <h3 class="ariticle-txt-title">自然熟成</h3>
                                 <p class="ariticle-txt"><span>72小時自然熟成 保留天然原味</span><br>
-                                    為了提供顧客最好的口感<br>
-                                    我們堅持使用嚴選的進口原料<br>
-                                    也就是好事多購買的外國乳酪<br>
-                                    並堅持把關食材的新鮮度<br>
-                                    讓顧客能吃得安心與開心<br>
+                                    為了提供顧客最好的口感，我們堅持使用嚴選的進口原料，也就是好事多購買的外國乳酪，並堅持把關食材的新鮮度，讓顧客能吃得安心與開心
                                 </p>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <div class="feature-ariticle-pic">
-                                    <img src="images/about/traditional-paneer-cheese-arrangement.jpg" alt="">
+                                    <img src="images/about/traditional-paneer-cheese-arrangement.jpg" alt="自然熟成">
                                 </div>
                             </div>
                         </article>
                     </div>
-                </section>      
+                </section>   
             </section>      
         </main>
 <!-- 頁尾 -->

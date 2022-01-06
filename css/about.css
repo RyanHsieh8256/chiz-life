@@ -101,15 +101,56 @@ iframe{
 	height: 100%;
 }
 
+
+
+
 /* 文章 */
 .feature-ariticle-block{
 	width: 100%;
 	margin: auto;
 	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
 	align-items: center;
-	color: #fff;
-	text-shadow: 0.1em 0.1em 0.1em #000;
+	color: #523239;
+	text-shadow: 0.1em 0.1em 0.2em #aaa9;
 }
+
+.brand-feature-txt{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.brand-feature-txt h3{
+	font-size: 1.7rem;
+	padding: 2% 0;
+}
+.brand-feature-txt p{
+	font-size: 1rem;
+	padding: 2% 0;
+}
+.feature-video-block{
+	padding: 0;
+}
+.feature-video{
+    position: relative;
+	width: 100%;
+}
+.feature-video::before{
+	position: relative;
+	content: "";
+	display: block;
+	width:100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
 .feature-ariticle{
 	padding: 20px 0;
 }
@@ -119,24 +160,26 @@ iframe{
 
 .ariticle-txt-title{
 	writing-mode: vertical-lr;
-	font-size: 2.5em;
-	letter-spacing: 0.3em;
-	border-right:#fff 1px solid;
+	font-size: 2rem;
+	letter-spacing: 0.5rem;
+	border-right:#523239aa 1.5px solid;
 	padding: 0 5%;
 }
 .feature-ariticle:nth-last-of-type(even) .ariticle-txt-title {
-	border-left:#fff 1px solid;
+	border-left:#523239aa 1.5px solid;
 	border-right:none;
 }
 .ariticle-txt{
 	padding: 0 5%;
 }
 .ariticle-txt span{
-	font-size: 1.5em;
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 .feature-ariticle-txt{
 	display: flex;
 	align-items: center;
+	font-size: 0.8rem;
 }
 .feature-ariticle:nth-last-of-type(even) .feature-ariticle-txt{
 	flex-direction: row-reverse;
@@ -145,7 +188,7 @@ iframe{
 
 .feature-ariticle-pic{
 	position: relative;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 .feature-ariticle-pic::before{
@@ -166,6 +209,35 @@ iframe{
 	object-position: center center;
 	vertical-align: top;
 }
+@media screen and (min-width:768px) {
+	.brand-feature{
+		width: 100%;
+		margin: auto;
+		padding-bottom: 50px;
+		background-image: url(../images/all/big-bg-01.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+@media screen and (min-width:992px) {
+	h2.feature-title{
+		width: 85%;
+		padding-top: 50px;
+		padding-bottom:50px ;
+	}
+	.ariticle-txt span{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+	.feature-ariticle-txt{
+		display: flex;
+		align-items: center;
+		font-size: 1rem;
+	}
+}
+
 .big-bg{
 	width: 100%;
 }

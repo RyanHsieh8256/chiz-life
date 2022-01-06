@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChizLife起司蛋糕 | 最新消息</title>
-    <link rel="shortcut icon" href="images/all/logo-col.png">
+    <title>最新消息</title>
+    <link rel="shortcut icon" href="images/all/logo-icon.png" type="image/png">
     <meta name="description" content="超好吃的起司蛋糕">
     <meta name="keyword" content="起司蛋糕,乳酪蛋糕,蛋糕,好吃蛋糕,生日,節慶,慶祝">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/cssreset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -32,94 +34,82 @@
 </head>
 <body>
 <!-- 導覽列 -->
-<header>
-    <nav class="nav-block">
-        <div class="logo">
-            <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
-        </div>
-        <nav class="main-nav">
-            <ul class="txt-menu">
-                <a href="product-list-fruit.html"><li>新鮮果香</li></a>
-                <a href="product-list-macha.html"><li>抹茶乳酪</li></a>
-                <a href="product-list-clsaaic.html"><li>經典重乳酪</li></a>
-            </ul>
-            <ul class="icon-menu">
-                <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
-                <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
-                <li class="search-bar">
-                    <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
-                <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
-                </li>
-                
-            </ul>
-            <div class="hamburger">
-                <button class="hambergur-icon-open" id="hambergurControl"></button>
-                <ol class="hamburger-menu">
-                    <a href="product-list-fruit.html" class="hambergur-li-hidden"><li>新鮮果香</li></a>
-                    <a href="product-list-macha.html" class="hambergur-li-hidden"><li>抹茶乳酪</li></a>
-                    <a href="product-list-clsaaic.html" class="hambergur-li-hidden"><li>經典重乳酪</li></a>
-                    <a href="product-list-all.html"><li>全部商品</li></a>
-                    <a href="news.html"><li>最新消息</li></a>
-                    <a href="about.html"><li>關於我們</li></a>
-                    <a href="QA.html"><li>常見問題</li></a>
-                    <a href="contact.html"><li>聯絡資訊</li></a>
-                </ol>
+    <header>
+        <nav class="nav-block">
+            <div class="logo">
+                <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
             </div>
+            <nav class="main-nav">
+                <ul class="txt-menu">
+                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                </ul>
+                <ul class="icon-menu">
+                    <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
+                    <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
+                    <li class="search-bar">
+                        <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
+                    <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <button class="hambergur-icon-open" id="hambergurControl"></button>
+                    <div class="hamburger-menu">
+                        <div class="hamburger-menu-block">
+                            <ol class="hambergur-li-hidden">
+                                <li class="hambergur-search-bar">
+                                    <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品">
+                                <button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                                </li>
+                                <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                                <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                                <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                            </ol>
+                            <ol class="hambergur-li">                               
+                                <li><a href="product-list-all.html">全部商品</a></li>
+                                <li><a href="news.html">最新消息</a></li>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li><a href="QA.html">常見問題</a></li>
+                                <li><a href="contact.html">聯絡資訊</a></li>                               
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </nav>
-    </nav>
-</header>
+    </header>
+    <div class="fixed-big-bg"></div>
     <main>
+        <h1 class="page-title">NEWS</h1>
         <!-- 最新活動 -->
-        <section class="new-event-banner">
-            <ol class="main-content-slides">
-                <input type="radio" id="control-1" name="control" checked>
-                <input type="radio" id="control-2" name="control">
-                <input type="radio" id="control-3" name="control">
-
-
-                <li class="slide"><a href=""><img src="images/all/main-banner-01.jpg" alt=""></a></li>
-                <li class="slide"><a href=""><img src="images/all/main-banner-02.jpg" alt=""></a></li>
-                <li class="slide"><a href=""><img src="images/all/main-banner-03.jpg" alt=""></a></li>
-
-                <div class="slid-lr-button  slide1">
-                    <label for="control-3">
-                        <span>❰</span>
-                    </label>
-                    <label for="control-2">
-                        <span>❱</span>
-                    </label>
-                </div>
-                <div class="slid-lr-button  slide2">
-                    <label for="control-1">
-                        <span>❰</span>
-                    </label>
-                    <label for="control-3">
-                        <span>❱</span>
-                    </label>
-                </div>
-                <div class="slid-lr-button  slide3">
-                    <label for="control-2">
-                        <span>❰</span>
-                    </label>
-                    <label for="control-1">
-                        <span>❱</span>
-                    </label>
-                </div>
-
-                <div class="controls-visible">
-                    <label for="control-1"></label>
-                    <label for="control-2"></label>
-                    <label for="control-3"></label>
-                </div>
-            </ol>            
+        <!-- 麵包屑 -->
+        <div class="breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="news.html">最新消息</a>
+                </li>
+            </ol>
+        </div>
+        <section class="news-slider">
+            <div class="owl-carousel owl-theme">
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=1"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=2"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=3"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=4"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=5"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=6"></a></div>
+            </div>
         </section>
         <!-- 歷史活動 -->
         <section class="news-list-block">
-            <h2 class="news-block-title">最新消息</h2>
             <div class="container news-list">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -132,8 +122,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -141,8 +131,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -150,8 +140,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -159,8 +149,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -168,8 +158,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -177,8 +167,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -186,8 +176,8 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <article class="item">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <article class="news-list-item">
                             <div class="pic"><img src="https://picsum.photos/300/200/?random=1"></div>
                             <div class="txt">
                                 <h3><date>12/18~12/30</date>聖誕節特賣!</h3>
@@ -221,6 +211,31 @@
         </ul>
         <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            rtl:true,
+            loop:true,
+            // nav:true,
+            margin:10,
+            smartSpeed:2000,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    </script>
 </body>
 </html>
