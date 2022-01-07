@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/news.css">
     <!-- 字體 -->
+    <!-- corithia(logo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
     <!-- 台北黑體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +31,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
-    <!-- corithia(logo) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- 導覽列 -->
@@ -81,9 +81,14 @@
     </header>
     <div class="fixed-big-bg"></div>
     <main>
+        <section class="news-slider">
+            <div class="owl-carousel owl-theme">
+                <div class="slider-item item"><a href=""><img src="images/news/news01.jpg"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/1200/800/?random=2"></a></div>
+                <div class="slider-item item"><a href=""><img src="https://picsum.photos/1200/800/?random=3"></a></div>
+            </div>
+        </section>
         <h1 class="page-title">NEWS</h1>
-        <!-- 最新活動 -->
-        <!-- 麵包屑 -->
         <div class="breadcrumb">
             <ol class="breadcrumb-list">
                 <li class="breadcrumb-item">
@@ -94,16 +99,6 @@
                 </li>
             </ol>
         </div>
-        <section class="news-slider">
-            <div class="owl-carousel owl-theme">
-                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=1"></a></div>
-                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=2"></a></div>
-                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=3"></a></div>
-                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=4"></a></div>
-                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=5"></a></div>
-                <div class="slider-item item"><a href=""><img src="https://picsum.photos/300/200/?random=6"></a></div>
-            </div>
-        </section>
         <!-- 歷史活動 -->
         <section class="news-list-block">
             <div class="container news-list">
@@ -229,10 +224,10 @@
                     items:1
                 },
                 600:{
-                    items:3
+                    items:1
                 },
                 1000:{
-                    items:3
+                    items:1
                 }
             }
         });

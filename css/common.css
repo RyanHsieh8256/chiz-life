@@ -1,10 +1,14 @@
 @charset "UTF-8";
+@font-face {
+	font-family: 'Hina Mincho';
+	src: url('../fonts/HinaMincho-Regular.ttf')format("ttf");
+  }
 html{
 	font-size: 14px;
 }
 body{
 	margin: 0 auto;
-	font-family: 'Noto Sans TC', sans-serif,'Roboto', sans-serif;
+	font-family: 'Noto Sans TC','Roboto',sans-serif;
 	/* font-family: 'Noto Serif TC', serif,'Roboto', sans-serif; */
 	letter-spacing:0.1em;
 	line-height: 1.7;
@@ -15,10 +19,13 @@ h1{
 	font-size: 3rem;
 }
 h2{
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 h3{
 	font-size: 1.5rem;
+}
+p{
+	font-size: 1.1rem;
 }
 a{
 	text-decoration: none;
@@ -32,38 +39,16 @@ a{
 }
 @media screen and (min-width:992px) {
 	h1{
-	font-size: 4rem;
-}
-	h2{
-		font-size: 1.8rem;
+	font-size:  4rem;
 	}
 
-	h3,h4,h5,h6{
-		font-size: 1.2rem;
-	}
-	a{
-		text-decoration: none;
-		color:#523239 ;
-		display: inline-block;
-	}
 }
 @media screen and (min-width:1200px) {
 	h1{
 	font-size: 5rem;
-}
-	h2{
-		font-size: 1.8rem;
 	}
+}
 
-	h3,h4,h5,h6{
-		font-size: 1.2rem;
-	}
-	a{
-		text-decoration: none;
-		color:#523239 ;
-		display: inline-block;
-	}
-}
 /* 導覽列 */
 header{
 	width: 100%;
@@ -79,7 +64,7 @@ header{
 	z-index: 100;
 	transition: 1s;
 	background: #fff8cf;
-	box-shadow: 0 2px 2px 0 #0004;
+	/* box-shadow: 0 2px 2px 0 #0004; */
 	/* background-image: linear-gradient(45deg, #e6b980 0%, #eacda3 100%); */
 }
 .nav-block{
@@ -205,7 +190,7 @@ header{
 	left:10%;
 	transform-origin: 50% 50%;
 	transition: 1s;
-	box-shadow: 0 0.6em 0 0#523239;
+	box-shadow: 0 8px 0 0#523239;
 }
 .hambergur-icon-open::after{
 	content:"" ;
@@ -427,8 +412,8 @@ li.breadcrumb-item a:hover{
 	transform: translate(-50%,-50%);
 }
 .product-pic:hover img{
-	width: 105%;
-	height: 105%;
+	width: 110%;
+	height: 110%;
 }
 .cart-btn{
 	position: absolute;

@@ -168,13 +168,14 @@ h2.hot-product-title::after{
 	transition: 0.5s;
 }
 .banner:hover img{
-	width: 105%;
-	height: 105%;
+	width: 110%;
+	height: 110%;
 }
 .banner-txt{
 	position: absolute;
-	height: 20%;
-	width: 40%;
+	/* height: 20%;
+	width: 40%; */
+	padding:2% 5%;
 	bottom: 10%;
 	left: 5%;
 	display: flex;
@@ -264,7 +265,7 @@ h2.feature-title::after{
 .feature-ariticle-block{
 	width: 95%;
 	margin: auto;
-	font-family: 'Noto Serif TC', serif,'Roboto', sans-serif;
+	font-family: 'Noto Serif TC', serif, 'Hina Mincho', sans-serif;
 	align-items: center;
 	color: #523239;
 	/* text-shadow: 0.1em 0.1em 0.2em #aaa9; */
