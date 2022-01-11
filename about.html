@@ -29,7 +29,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
-    
+    <!-- Hina Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        .hambergur-menu>li:nth-child(4)>a{
+            color: #f15922;
+        }
+    </style>
 </head>
 <body>
 <!-- 導覽列 -->
@@ -38,131 +48,128 @@
             <div class="logo">
                 <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
             </div>
-            <nav class="main-nav">
+            <div class="main-nav">
                 <ul class="txt-menu">
-                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
                     <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
                     <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
                 </ul>
                 <ul class="icon-menu">
                     <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
                     <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
-                    <li class="search-bar">
-                        <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
-                    <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
-                    </li>
                 </ul>
                 <div class="hamburger">
                     <button class="hambergur-icon-open" id="hambergurControl"></button>
-                    <div class="hamburger-menu">
-                        <div class="hamburger-menu-block">
-                            <ol class="hambergur-li-hidden">
-                                <li class="hambergur-search-bar">
-                                    <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品">
-                                <button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
-                                </li>
-                                <li><a href="product-list-fruit.html">新鮮果香</a></li>
-                                <li><a href="product-list-macha.html">抹茶乳酪</a></li>
-                                <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
-                            </ol>
-                            <ol class="hambergur-li">                               
-                                <li><a href="product-list-all.html">全部商品</a></li>
-                                <li><a href="news.html">最新消息</a></li>
-                                <li><a href="about.html">關於我們</a></li>
-                                <li><a href="QA.html">常見問題</a></li>
-                                <li><a href="contact.html">聯絡資訊</a></li>                               
-                            </ol>
-                        </div>
+                    <div class="hamburger-block">
+                        <ul class="hambergur-menu">
+                            <li class="hambergur-search-bar">
+                                <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品"><button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                            </li>                               
+                            <li><a href="product-list-all.html">全部商品</a>
+                                <span id="submenuSwitch">
+                                    <ion-icon name="chevron-down-outline" id="submenuControl"></ion-icon>
+                                </span>
+                                <ul class="submenu" >
+                                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">最新消息</a></li>
+                            <li><a href="about.html">關於我們</a></li>
+                            <li><a href="QA.html">常見問題</a></li>
+                            <li><a href="contact.html">聯絡資訊</a></li>                               
+                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
         </nav>
     </header>
 <!-- 品牌簡介 -->
-<div class="fixed-big-bg"></div>
-        <main class="brand-feature">
-            <div class="page-title"><h1>ABOUT US</h1></div>
-            <section class="brand-feature-block">
-                <section class="brand-concept">
-                    <div class="brand-concept-video">
-                        <video autoplay muted loop playsinline>
-                            <source src="video/about/about-title.mp4">
-                        </video>                        
-                    </div>
-                    <div class="brand-concept-txt">
-                        <h2>品味人生 從Chiz Life開始</h2>
-                        <p>
-                            我們相信，品嘗美味即是讓人生幸福的關鍵<br>
-                            人生在世，不如意之事十常八九<br>
-                            或許在生活中你每天品嘗了許多的悲傷與痛苦<br>
-                            但至少在這裡，你可以找到屬於你的意思甜蜜<br>
-                            抱持著這樣的理想，我們成立了Chiz Life。<br>
-                            <br>「做好吃的蛋糕很容易，做讓人感到幸福的蛋糕，很難」 －Chiz Life主廚<br>
-                        </p>
-                    </div>       
-                </section>
-                <section class="brand-story-block">
-                    <div class="brand-concept-pic">
-                        <img src="images/about/boss.jpg" alt="老闆帥照">  
-                    </div>
-                    <article class="brand-story" >
-                        <h2>一群對烘焙充滿熱情的青年</h2>
-                        <p>1982年,一群對起司蛋糕有著濃厚興趣的青年，一直以來認為唯有甜點蛋糕最能展現出烘焙的精緻化，因此他的夢想是自己經營一間甜點蛋糕店，卻因為曾經對不友善烘焙環境失望，直到近中年才鼓起勇氣，默默的在臉書上開辦起粉絲專頁，花了創業的30萬元改造自家不到10坪的空間創立甜點工作室。這就是「ChizLife甜點工作室」老闆的創業起源。</p>
+    <div class="fixed-big-bg"></div>
+    <main class="brand-feature">
+        <div class="page-title"><h1>ABOUT US</h1></div>
+        <section class="brand-feature-block">
+            <section class="brand-concept">
+                <div class="brand-concept-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="video/about/about-title.mp4">
+                    </video>                        
+                </div>
+                <div class="brand-concept-txt">
+                    <h2>品味人生 從Chiz Life開始</h2>
+                    <p>
+                        我們相信，品嘗美味即是讓人生幸福的關鍵<br>
+                        人生在世，不如意之事十常八九<br>
+                        或許在生活中你每天品嘗了許多的悲傷與痛苦<br>
+                        但至少在這裡，你可以找到屬於你的意思甜蜜<br>
+                        抱持著這樣的理想，我們成立了Chiz Life。<br>
+                        <br>「做好吃的蛋糕很容易，做讓人感到幸福的蛋糕，很難」 －Chiz Life主廚<br>
+                    </p>
+                </div>       
+            </section>
+            <section class="brand-story-block">
+                <div class="brand-concept-pic">
+                    <img src="images/about/boss.jpg" alt="老闆帥照">  
+                </div>
+                <article class="brand-story" >
+                    <h2>一群對烘焙充滿熱情的青年</h2>
+                    <p>1982年,一群對起司蛋糕有著濃厚興趣的青年，一直以來認為唯有甜點蛋糕最能展現出烘焙的精緻化，因此他的夢想是自己經營一間甜點蛋糕店，卻因為曾經對不友善烘焙環境失望，直到近中年才鼓起勇氣，默默的在臉書上開辦起粉絲專頁，花了創業的30萬元改造自家不到10坪的空間創立甜點工作室。這就是「ChizLife甜點工作室」老闆的創業起源。</p>
+                </article>
+            </section>
+            <section class="feature-video-block">
+                <div class="feature-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_4q_Rn7_JgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>   
+            <section class="feature-ariticle-block">
+                <div class="linear-bg">
+                    <h2 class="feature-title">幸福<br>源於簡單的快樂</h2>
+                </div>
+                <div class="container feature-ariticle-container">
+                    <article class="row feature-ariticle">
+                        <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
+                            <h3 class="ariticle-txt-title">嚴選食材</h3>
+                            <p class="ariticle-txt"><span>頂級高級進口乳酪</span><br>
+                                為了提供顧客最好的口感，我們堅持使用嚴選的進口原料，也就是好事多購買的外國乳酪，並堅持把關食材的新鮮度，讓顧客能吃得安心與開心
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature-ariticle-pic">
+                                <img src="images/index/cheese.jpg" alt="嚴選食材">
+                            </div>
+                        </div>
                     </article>
-                </section>
-                <section class="feature-video-block">
-                    <div class="feature-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_4q_Rn7_JgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>   
-                <section class="feature-ariticle-block">
-                    <div class="linear-bg">
-                        <h2 class="feature-title">幸福<br>源於簡單的快樂</h2>
-                    </div>
-                    <div class="container feature-ariticle-container">
-                        <article class="row feature-ariticle">
-                            <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
-                                <h3 class="ariticle-txt-title">嚴選食材</h3>
-                                <p class="ariticle-txt"><span>頂級高級進口乳酪</span><br>
-                                    為了提供顧客最好的口感，我們堅持使用嚴選的進口原料，也就是好事多購買的外國乳酪，並堅持把關食材的新鮮度，讓顧客能吃得安心與開心
-                                </p>
+                    <article class="row feature-ariticle">
+                        <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
+                            <h3 class="ariticle-txt-title">頂級手藝</h3>
+                            <p class="ariticle-txt"><span>冰其林3星甜點師 打造黃金比例</span><br>
+                                由長期旅居國外的甜點師領軍研發，打造完美黃金比例，讓顧客品嘗到人間美味，人生至福 莫過於此
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature-ariticle-pic">
+                                <img src="images/index/kitchen.jpg" alt="頂級手藝">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <div class="feature-ariticle-pic">
-                                    <img src="images/index/cheese.jpg" alt="嚴選食材">
-                                </div>
+                        </div>
+                    </article>
+                    <article class="row feature-ariticle">
+                        <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
+                            <h3 class="ariticle-txt-title">自然熟成</h3>
+                            <p class="ariticle-txt"><span>72小時自然熟成 保留天然原味</span><br>
+                                為了提供顧客最好的口感，我們堅持使用嚴選的進口原料，也就是好事多購買的外國乳酪，並堅持把關食材的新鮮度，讓顧客能吃得安心與開心
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature-ariticle-pic">
+                                <img src="images/about/traditional-paneer-cheese-arrangement.jpg" alt="自然熟成">
                             </div>
-                        </article>
-                        <article class="row feature-ariticle">
-                            <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
-                                <h3 class="ariticle-txt-title">頂級手藝</h3>
-                                <p class="ariticle-txt"><span>冰其林3星甜點師 打造黃金比例</span><br>
-                                    由長期旅居國外的甜點師領軍研發，打造完美黃金比例，讓顧客品嘗到人間美味，人生至福 莫過於此
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <div class="feature-ariticle-pic">
-                                    <img src="images/index/kitchen.jpg" alt="頂級手藝">
-                                </div>
-                            </div>
-                        </article>
-                        <article class="row feature-ariticle">
-                            <div class="col-12 col-md-6 col-lg-6 feature-ariticle-txt">
-                                <h3 class="ariticle-txt-title">自然熟成</h3>
-                                <p class="ariticle-txt"><span>72小時自然熟成 保留天然原味</span><br>
-                                    為了提供顧客最好的口感，我們堅持使用嚴選的進口原料，也就是好事多購買的外國乳酪，並堅持把關食材的新鮮度，讓顧客能吃得安心與開心
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <div class="feature-ariticle-pic">
-                                    <img src="images/about/traditional-paneer-cheese-arrangement.jpg" alt="自然熟成">
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>   
-            </section>      
-        </main>
+                        </div>
+                    </article>
+                </div>
+            </section>   
+        </section>      
+    </main>
 <!-- 頁尾 -->
     <footer>
         <div class="footer-block">
@@ -183,8 +190,9 @@
             <li><a href="QA.html">退貨政策</a></li>
             <li><a href="QA.html">購物條款</a></li>
         </ul>
-        <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.</div>
+        <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.<br>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>

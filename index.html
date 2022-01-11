@@ -32,9 +32,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <style>
         header{
-            opacity:0;
             background: none;
             box-shadow: none;
         }
@@ -51,44 +52,41 @@
             <div class="logo">
                 <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
             </div>
-            <nav class="main-nav">
+            <div class="main-nav">
                 <ul class="txt-menu">
-                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
                     <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
                     <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
                 </ul>
                 <ul class="icon-menu">
                     <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
                     <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
-                    <li class="search-bar">
-                        <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
-                    <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
-                    </li>
                 </ul>
                 <div class="hamburger">
                     <button class="hambergur-icon-open" id="hambergurControl"></button>
-                    <div class="hamburger-menu">
-                        <div class="hamburger-menu-block">
-                            <ol class="hambergur-li-hidden">
-                                <li class="hambergur-search-bar">
-                                    <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品">
-                                <button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
-                                </li>
-                                <li><a href="product-list-fruit.html">新鮮果香</a></li>
-                                <li><a href="product-list-macha.html">抹茶乳酪</a></li>
-                                <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
-                            </ol>
-                            <ol class="hambergur-li">                               
-                                <li><a href="product-list-all.html">全部商品</a></li>
-                                <li><a href="news.html">最新消息</a></li>
-                                <li><a href="about.html">關於我們</a></li>
-                                <li><a href="QA.html">常見問題</a></li>
-                                <li><a href="contact.html">聯絡資訊</a></li>                               
-                            </ol>
-                        </div>
+                    <div class="hamburger-block">
+                        <ul class="hambergur-menu">
+                            <li class="hambergur-search-bar">
+                                <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品"><button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                            </li>                               
+                            <li><a href="product-list-all.html">全部商品</a>
+                                <span id="submenuSwitch">
+                                    <ion-icon name="chevron-down-outline" id="submenuControl"></ion-icon>
+                                </span>
+                                <ul class="submenu" >
+                                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">最新消息</a></li>
+                            <li><a href="about.html">關於我們</a></li>
+                            <li><a href="QA.html">常見問題</a></li>
+                            <li><a href="contact.html">聯絡資訊</a></li>                               
+                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
         </nav>
     </header>
     <main>
@@ -350,35 +348,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script>
-        let headerOpTimer;
-        let hambergurMenu;
-        function headerOp(){
-            document.getElementsByTagName("header")[0].style.opacity = "1";
-            clearInterval(headerOpTimer);
-        }
-        function hambergurMenuControl(){
-            if(hambergurMenu.className == "hambergur-icon-open"){
-                hambergurMenu.className = "hambergur-icon-close";
-                document.getElementsByClassName("hamburger-menu")[0].style.right = "0";
-                document.getElementsByClassName("hamburger-menu")[0].style.opacity = "1";
-            }else{
-                hambergurMenu.className = "hambergur-icon-open";
-                document.getElementsByClassName("hamburger-menu")[0].style.right = "-100%";
-                document.getElementsByClassName("hamburger-menu")[0].style.opacity = "0";
-            }
-        }
-        function init(){
-            headerOpTimer = setInterval(headerOp,100)
-            hambergurMenu = document.querySelector("#hambergurControl");
-            hambergurMenu.onclick = hambergurMenuControl;
-        }
-        
-        window.addEventListener("load",init,false);
-        // window.addEventListener("scroll", function(){
-        //     document.getElementsByClassName("nav-block")[0].style.background = "orange";
-        // })
-    </script>
+    <script src="js/common.js"></script>
     <script>
         // 滾輪判斷
         window.onscroll = function() {
@@ -386,7 +356,7 @@
             var navBg = document.getElementsByTagName("header")[0];
             console.log(scrollTop)
             if(scrollTop >= 260){
-                navBg.style.background = "#fff";
+                navBg.style.background = "#fff8cf";
                 navBg.style.boxShadow = "none";
             }else if(scrollTop < 260){
                 navBg.style.background = "none";

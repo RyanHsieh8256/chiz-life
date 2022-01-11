@@ -22,10 +22,10 @@ h2{
 	font-size: 1.8rem;
 }
 h3{
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 p{
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 a{
 	text-decoration: none;
@@ -62,10 +62,11 @@ header{
 	/* font-family: 'Noto Serif TC', serif,'Roboto', sans-serif; */
 	font-size: 1rem;
 	z-index: 100;
-	transition: 1s;
+	transition: .5s;
 	background: #fff8cf;
 	/* box-shadow: 0 2px 2px 0 #0004; */
 	/* background-image: linear-gradient(45deg, #e6b980 0%, #eacda3 100%); */
+	overflow: hidden;
 }
 .nav-block{
 	width:85% ;
@@ -127,40 +128,6 @@ header{
 	border-bottom:#f15922 3px solid ;
 }
 
-.search-bar{
-	display: none;
-	align-items: center;
-	transition: 1s;
-	position: relative;
-}
-.search-txt{
-	position: relative;
-	right: 0;
-	border-radius: 10px;
-	border: none;
-	background:#fff;
-	/* display: none; */
-	width: 0;
-	height: 80%;
-	transition: 0.5s ease-in-out;
-	padding: 0;
-	text-align: center;
-	background-color: #fffd;
-}
-.search-btn{
-	position: relative;
-	right: 0;
-
-	border: none;
-	vertical-align: bottom;
-	background: none;
-	text-align: center;
-	padding: 0;
-}
-.search-bar:hover .search-txt{
-	width: 150px;
-}
-
 
 .hamburger{
 	width: 30px;
@@ -176,6 +143,9 @@ header{
 	background:none;
 	position: relative;
 	vertical-align:middle;
+	border-radius: 1%;
+
+	cursor: pointer;
 }
 .hambergur-icon-open::before{
 	content:"" ;
@@ -211,10 +181,18 @@ header{
 	width: 100%;
 	height: 100%;
 	border: none;
-	background:none;
+
+	background:#fff78d;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 0 #0005;
+
 	position: relative;
 	vertical-align:middle;
 	z-index: 20;
+
+	transition: .5s;
+
+	cursor: pointer;
 }
 .hambergur-icon-close::before{
 	content:"" ;
@@ -249,58 +227,80 @@ header{
 }
 
 /* 漢堡選單 */
-.hamburger-menu{
+.hamburger-block{
 	position: fixed;
-	top:0;
-	right:-100%;
+	top:60px;
+	right:-500px;
 	z-index: 10;
 
-	width:50%;
-	height: 100%;
+	padding-top: 10px;
 
-	overflow: auto;
-	background: #F6DE7D;
+	background: #fff78d;
 	transition: 0.5s ease-in-out;
 	opacity: 0;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-.hamburger-menu-block{
-	width: 100%;
-	margin: auto;
-	padding-top: 60px;
-	text-align: center;
-}
-.hamburger-menu li{
-	color: #523239f0;
-	padding: 5px 0;
-	width: 70%;
-	border-bottom: #fffc 2px solid;
-}
-.hamburger-menu li+li:hover{
-	border-bottom: #f15922 2px solid;
+	border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
-.hambergur-li-hidden{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.hambergur-menu>li+li{
+	text-align: left;
+	transition: all .1s ease-out;
+	box-sizing: border-box;
+	border-bottom: #d1b235 1px solid;
+	/* border-top: #ffe88c 1px solid; */
+}
+.hambergur-menu>li+li>a:hover{
+	color:#f15922;
+}
+.hambergur-menu>li>a{
+	padding: 7px 0 7px 12px;
+}
+.submenu{
+	max-height: 300px;
+    transition: all .8s ease-out;
+	background-color: #ff5100;
 	width: 100%;
-	margin: auto;
+	overflow: hidden;
+}
+.submenu a{
+	width: 100%;
+	padding: 7px 0 7px 15px;
+
 }
 
-li.hambergur-search-bar{
+
+.submenu li{
+	position: relative;
+	left: 0;
+	background-color: #fff8cf;
+	transition: 0.3s;
+}
+.submenu li:hover{
+	left: 5%;
+}
+
+#submenuSwitch{
+	vertical-align: middle;
+}
+#submenuControl{
+	transition: .6s ease-in-out;
+}
+
+
+.hambergur-search-bar{
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
 	margin: auto;
 	border: none;
 	height: 100%;
+	width: 90%;
 }
 .hambergur-search-txt{
 	border: none;
 	padding: 0 5px;
-	background: #fff8cf;
+	background: #fff;
 	width: 100%;
 	border-radius: 5px;
 }
@@ -314,50 +314,28 @@ li.hambergur-search-bar{
 	height: 30px;
 	vertical-align: bottom;
 }
-.hambergur-li{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-
-@media screen and (min-width:768px) {
-	.hamburger-menu{
-		width: 40%;
-	}
-}
 
 @media screen and (min-width:992px) {
 	.txt-menu{
 		display: flex;
 	}
-	.hambergur-li-hidden{
-		display: none;
-	}
-	.hamburger-menu li:hover{
-		border-bottom: #f15922 2px solid;
-	}
-	.search-bar{
-		display: flex;
-	}
-	.hamburger-menu{
-		width: 30%;
-	}
-	.logo img{
-		width: 150px;
-	}
 }
-@media screen and (min-width:1200px) {
-	.txt-menu{
-		display: flex;
-	}
-	.hambergur-li-hidden{
-		display: none;
-	}
-	.hamburger-menu{
-		width: 25%;
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 麵包屑 */
 .breadcrumb{
 	width: 85%;

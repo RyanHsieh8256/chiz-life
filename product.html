@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChizLife起司蛋糕 | 商品頁</title>
-    <link rel="shortcut icon" href="images/all/logo-col.png">
+    <link rel="shortcut icon" href="images/all/logo-icon.png" type="image/png">
     <meta name="description" content="超好吃的起司蛋糕">
     <meta name="keyword" content="起司蛋糕,乳酪蛋糕,蛋糕,好吃蛋糕,生日,節慶,慶祝">
     <link rel="stylesheet" href="css/cssreset.css">
@@ -29,71 +29,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
-    <style>
-        .menu li:nth-child(4) a{
-            color: #f15922;
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
 <!-- 導覽列 -->
-<header>
-    <nav class="nav-block">
-        <div class="logo">
-            <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
-        </div>
-        <nav class="main-nav">
-            <ul class="txt-menu">
-                <li><a href="product-list-macha.html">抹茶乳酪</a></li>
-                <li><a href="product-list-fruit.html">新鮮果香</a></li>
-                <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
-            </ul>
-            <ul class="icon-menu">
-                <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
-                <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
-                <li class="search-bar">
-                    <input class="search-txt" type="text" name="search" placeholder="搜尋商品">
-                <button class="search-btn"><img src="images/icon/search.png" alt=""></button>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <button class="hambergur-icon-open" id="hambergurControl"></button>
-                <div class="hamburger-menu">
-                    <div class="hamburger-menu-block">
-                        <ol class="hambergur-li-hidden">
+    <header>
+        <nav class="nav-block">
+            <div class="logo">
+                <a href="index.html"><img src="images/icon/logo.png" alt="起司人生"></a>
+            </div>
+            <div class="main-nav">
+                <ul class="txt-menu">
+                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                </ul>
+                <ul class="icon-menu">
+                    <li><a href="product-list-fruit.html"><img src="images/icon/login.png" alt=""></a></li>
+                    <li><a href="product-list-macha.html"><img src="images/icon/cart.png" alt=""></a></li>
+                </ul>
+                <div class="hamburger">
+                    <button class="hambergur-icon-open" id="hambergurControl"></button>
+                    <div class="hamburger-block">
+                        <ul class="hambergur-menu">
                             <li class="hambergur-search-bar">
-                                <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品">
-                            <button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                                <input class="hambergur-search-txt" type="text" name="search" placeholder="搜尋商品"><button class="hambergur-search-btn"><img src="images/icon/search.png" alt=""></button>
+                            </li>                               
+                            <li><a href="product-list-all.html">全部商品</a>
+                                <span id="submenuSwitch">
+                                    <ion-icon name="chevron-down-outline" id="submenuControl"></ion-icon>
+                                </span>
+                                <ul class="submenu" >
+                                    <li><a href="product-list-fruit.html">新鮮果香</a></li>
+                                    <li><a href="product-list-macha.html">抹茶乳酪</a></li>
+                                    <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
+                                </ul>
                             </li>
-                            <li><a href="product-list-fruit.html">新鮮果香</a></li>
-                            <li><a href="product-list-macha.html">抹茶乳酪</a></li>
-                            <li><a href="product-list-clsaaic.html">經典重乳酪</a></li>
-                        </ol>
-                        <ol class="hambergur-li">                               
-                            <li><a href="product-list-all.html">全部商品</a></li>
                             <li><a href="news.html">最新消息</a></li>
                             <li><a href="about.html">關於我們</a></li>
                             <li><a href="QA.html">常見問題</a></li>
                             <li><a href="contact.html">聯絡資訊</a></li>                               
-                        </ol>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
-    </nav>
-</header>
+    </header>
     <main>
+        <h1 class="page-title">CLASSIC</h1>
         <!-- 麵包屑 -->
         <div class="breadcrumb">
             <ol class="breadcrumb-list">
                 <li class="breadcrumb-item">
-                    <a href="">全部商品</a>
+                    <a href="product-list-all.html">全部商品</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="">經典重乳酪系列</a>
+                    <a href="product-list-clsaaic.html">經典重乳酪系列</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="">經典重乳酪蛋糕</a>
+                    <a href="product.html">經典乳酪蛋糕</a>
                 </li>
             </ol>
         </div>
@@ -121,7 +118,7 @@
             </div>
             <div class="product-summary">
                 <div class="product-summary-block">
-                    <h2 class="product-summary-title">經典重乳酪蛋糕</h2>
+                    <h2 class="product-summary-title">經典乳酪蛋糕</h2>
                     <p class="product-summary-description">以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕介紹文介紹文以傳統方式發酵，並放入獨家配方，打造超級好吃的起司蛋糕!!!</p>
                     <p class="product-summary-event">12/11~12/30<br>聖誕節活動開跑，買蛋糕就送聖誕老公公!</p>
                     <p class="product-summary-price">NT$1,200</p>
@@ -146,22 +143,14 @@
             </div>
         </section>
         <section class="product-detail">
-            <ol class="product-detail-list">
-                <li><h3>商品描述</h3></li>
-                <li><h3>送貨及付款方式</h3></li>
-                <li><h3>注意事項</h3></li>
+            <ol class="product-detail-title">
+                <li id="spec"><h3>商品描述</h3></li>
+                <li id="shipment"><h3>送貨及付款方式</h3></li>
+                <li id="notice"><h3>注意事項</h3></li>
             </ol>
             <div class="product-detail-block">
-                <!-- <article class="product-detail-item product-description">
-                    尚未編輯
-                </article> -->
-                <article class="product-detail-item product-spec">
-                        <h4>送貨方式</h4>
-                        <ul>
-                            <li>【黑貓】冷藏宅配 (建議提早配送)</li>
-                            <li><a href="">店面</a>自取</li>
-                        </ul>
-                        <h4>付款方式</h4>
+                <article class="product-detail-item detail-actived" id="detail-spec">
+                        <h4>classic</h4>
                         <ul>
                             <li>信用卡線上刷卡</li>
                             <li>LINE Pay</li>
@@ -170,9 +159,36 @@
                             <li>銀行轉帳／ATM</li>
                         </ul>
                 </article>
-                <!-- <article class="product-detail-item product-notice">
-                    尚未編輯
-                </article> -->
+                <article class="product-detail-item" id="detail-shipment">
+                    <h4>送貨方式</h4>
+                    <ul>
+                        <li>【黑貓】冷藏宅配 (建議提早配送)</li>
+                        <li><a href="">店面</a>自取</li>
+                    </ul>
+                    <h4>付款方式</h4>
+                    <ul>
+                        <li>信用卡線上刷卡</li>
+                        <li>LINE Pay</li>
+                        <li>超商代碼(持代碼至超商印出帳單繳費)</li>
+                        <li>實體ATM或網銀繳費</li>
+                        <li>銀行轉帳／ATM</li>
+                    </ul>
+                </article> 
+                <article class="product-detail-item"  id="detail-notice">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis inventore unde aspernatur, architecto tempore obcaecati quas? Aliquid architecto doloribus officiis ipsa culpa sunt id debitis, enim molestias veritatis animi?</h4>
+                    <ul>
+                        <li>【黑貓】冷藏宅配 (建議提早配送)</li>
+                        <li><a href="">店面</a>自取</li>
+                    </ul>
+                    <h4>付款方式</h4>
+                    <ul>
+                        <li>信用卡線上刷卡</li>
+                        <li>LINE Pay</li>
+                        <li>超商代碼(持代碼至超商印出帳單繳費)</li>
+                        <li>實體ATM或網銀繳費</li>
+                        <li>銀行轉帳／ATM</li>
+                    </ul>
+                </article>               
             </div>
         </section>
         <!-- 更多商品 -->
@@ -182,61 +198,61 @@
                 <div class="container"> 
                     <div class="row">
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item product-card">
+                            <div class="product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product01.jpg" alt="">
+                                    <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
+                                    <a href="product.html"  class="cart-btn">加入購物車</a>
                                 </div>
                                 <div class="product-txt">
                                     <h3 class="product-title">藍莓起司蛋糕</h3>
                                     <p>鮮甜藍莓搭配重乳酪，令人愛不釋手，一口接一口!</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
-                                        <a href="product.html"><button>加入購物車</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item product-card">
+                            <div class="product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product02.jpeg" alt="">
+                                    <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
+                                    <a href="product.html"  class="cart-btn">加入購物車</a>
                                 </div>
                                 <div class="product-txt">
-                                    <h3 class="product-title">小山園抹茶起司蛋糕</h3>
-                                    <p>以高級小山園抹茶製成，濃郁茶香散發濃濃日本風情~</p>
+                                    <h3 class="product-title">藍莓起司蛋糕</h3>
+                                    <p>鮮甜藍莓搭配重乳酪，令人愛不釋手，一口接一口!</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
-                                        <a href="product.html"><button>加入購物車</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item product-card">
+                            <div class="product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product03.jpg" alt="">
+                                    <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
+                                    <a href="product.html"  class="cart-btn">加入購物車</a>
                                 </div>
                                 <div class="product-txt">
-                                    <h3 class="product-title">草莓起司蛋糕</h3>
-                                    <p>嚴選新鮮草莓搭配起司蛋糕，香甜口味刺激你的味蕾!</p>
+                                    <h3 class="product-title">藍莓起司蛋糕</h3>
+                                    <p>鮮甜藍莓搭配重乳酪，令人愛不釋手，一口接一口!</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
-                                        <a href="product.html"><button>加入購物車</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 ">
-                            <div class="item product-card">
+                            <div class="product-card">
                                 <div class="product-pic">
-                                    <img src="images/index/product 04.jpg" alt="">
+                                    <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
+                                    <a href="product.html"  class="cart-btn">加入購物車</a>
                                 </div>
                                 <div class="product-txt">
-                                    <h3 class="product-title">巧克力起司蛋糕</h3>
-                                    <p>香甜牛奶巧克力搭配濃郁起司，香甜可口!</p>
+                                    <h3 class="product-title">藍莓起司蛋糕</h3>
+                                    <p>鮮甜藍莓搭配重乳酪，令人愛不釋手，一口接一口!</p>
                                     <div class="price-buy">
                                         <span>NT$1,200元</span>
-                                        <a href="product.html"><button>加入購物車</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -310,6 +326,32 @@
         }
 
         window.addEventListener("load",init,false)
+    </script>
+    <script>
+
+        $('.product-detail-title li').click(function(){
+            $('.product-detail-title li').css('border-bottom','#000 1px solid');
+            $(this).css('border-bottom','#f15922 3px solid');
+        })
+
+        $('#spec').click(function(){
+            $('#detail-shipment').removeClass('detail-actived');
+            $('#detail-spec').addClass('detail-actived');
+            $('#detail-notice').removeClass('detail-actived');
+        })
+        $('#shipment').click(function(){
+            $('#detail-shipment').addClass('detail-actived');
+            $('#detail-spec').removeClass('detail-actived');
+            $('#detail-notice').removeClass('detail-actived');
+        })
+        $('#notice').click(function(){
+            $('#detail-shipment').removeClass('detail-actived');
+            $('#detail-spec').removeClass('detail-actived');
+            $('#detail-notice').addClass('detail-actived');
+        })
+
+
+
     </script>
     <script src="js/common.js"></script>
 </body>
