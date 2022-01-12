@@ -171,23 +171,27 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 	display: flex;
 	font-size: 1.2rem;
 	height: 25px;
-}
-.order-num input,.order-num button{
-	vertical-align: middle;
-	border: none;
 	box-sizing: border-box;
 }
 .order-num input{
+	display: inline-block;
+	border: none;
 	border-top: #333 1px solid;
 	border-bottom: #333 1px solid;
 	text-align: center;
 	border-radius:0 ;
 	margin: 0;
 	height: 100%;
+	vertical-align: bottom;
+	box-sizing: border-box;
 }
 .order-num button{
+	display: inline-block;
+	border: none;
 	background-color: #fff;
 	height: 100%;
+	vertical-align: bottom;
+	box-sizing: border-box;
 }
 .order-num button:nth-of-type(1){
 	border-top: #333 1px solid;
