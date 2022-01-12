@@ -184,11 +184,13 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 	height: 100%;
 	vertical-align: bottom;
 	box-sizing: border-box;
+	box-shadow: none;
 }
 .order-num button{
 	display: inline-block;
 	border: none;
 	background-color: #fff;
+	margin: 0;
 	height: 100%;
 	vertical-align: bottom;
 	box-sizing: border-box;
