@@ -29,6 +29,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <!-- Hina Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -150,17 +154,14 @@
             </ol>
             <div class="product-detail-block">
                 <article class="product-detail-item detail-actived" id="detail-spec">
-                        <h4>classic</h4>
-                        <ul>
-                            <li>信用卡線上刷卡</li>
-                            <li>LINE Pay</li>
-                            <li>超商代碼(持代碼至超商印出帳單繳費)</li>
-                            <li>實體ATM或網銀繳費</li>
-                            <li>銀行轉帳／ATM</li>
-                        </ul>
+                    <!-- <h4>classic</h4> -->
+                    <div class="detail-pic">
+                        <img src="images/product/detail01.jpg">
+                        <img src="images/product/detail02.jpg">                             
+                    </div>
                 </article>
                 <article class="product-detail-item" id="detail-shipment">
-                    <h4>送貨方式</h4>
+                    <h4>送貨方式</h4>                    
                     <ul>
                         <li>【黑貓】冷藏宅配 (建議提早配送)</li>
                         <li><a href="">店面</a>自取</li>
@@ -175,29 +176,23 @@
                     </ul>
                 </article> 
                 <article class="product-detail-item"  id="detail-notice">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis inventore unde aspernatur, architecto tempore obcaecati quas? Aliquid architecto doloribus officiis ipsa culpa sunt id debitis, enim molestias veritatis animi?</h4>
                     <ul>
-                        <li>【黑貓】冷藏宅配 (建議提早配送)</li>
-                        <li><a href="">店面</a>自取</li>
-                    </ul>
-                    <h4>付款方式</h4>
-                    <ul>
-                        <li>信用卡線上刷卡</li>
-                        <li>LINE Pay</li>
-                        <li>超商代碼(持代碼至超商印出帳單繳費)</li>
-                        <li>實體ATM或網銀繳費</li>
-                        <li>銀行轉帳／ATM</li>
+                        <li>本商品不提供退換貨服務，買了覺得不好吃請認賠。</li>
+                        <li>商品出貨不附贈蠟燭盤子，請額外購買(就是要薛你的錢)或自備。</li>
+                        <li>本店不接受殺價，買不起請努力賺錢(或別買)。</li>
+                        <li>跟泡麵一樣，本商品圖片僅供參考，內容物、造型、成分、有效日期等以實物為主。</li>
                     </ul>
                 </article>               
             </div>
         </section>
+        <div id="toTop"><ion-icon class="to-top-icon" name="arrow-up-outline"></ion-icon></div>
         <!-- 更多商品 -->
         <aside>
             <h2 class="other-product-title">相關商品</h2>
             <div class="other-product">
                 <div class="container"> 
                     <div class="row">
-                        <div class="col-6 col-md-6 col-lg-3 ">
+                        <div class="col-12 col-md-6 col-lg-3 ">
                             <div class="product-card">
                                 <div class="product-pic">
                                     <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
@@ -212,7 +207,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-3 ">
+                        <div class="col-12 col-md-6 col-lg-3 ">
                             <div class="product-card">
                                 <div class="product-pic">
                                     <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
@@ -227,7 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-3 ">
+                        <div class="col-12 col-md-6 col-lg-3 ">
                             <div class="product-card">
                                 <div class="product-pic">
                                     <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
@@ -242,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-3 ">
+                        <div class="col-12 col-md-6 col-lg-3 ">
                             <div class="product-card">
                                 <div class="product-pic">
                                     <a href="product.html"><img src="images/index/product01.jpg" alt=""></a>
@@ -269,10 +264,10 @@
     <footer>
         <div class="footer-block">
             <ul class="footer-item-list">
-                <li>桃園市桃園區桃園路111號111樓</li>
-                <li>TEL:03-3398899</li>
-                <li>mail:<a href="">chizlife123@gmail.com</a></li>
-                <li>OPEN:(一)~(五) 9:00 ~ 18:00</li>
+                <li><ion-icon class="footer-icon" name="navigate-circle-outline"></ion-icon>桃園市桃園區桃園路111號111樓</li>
+                <li><ion-icon class="footer-icon" name="call-outline"></ion-icon>03-3398899</li>
+                <li><ion-icon class="footer-icon" name="mail-outline"></ion-icon><a href="">chizlife123@gmail.com</a></li>
+                <li><ion-icon class="footer-icon" name="time-outline"></ion-icon>(一)~(五) 9:00 ~ 18:00</li>
             </ul>
             <ul class="footer-item-list followus">
                 <li><a href="https://www.facebook.com/"><img src="images/all/fb-icon.png" alt="FB"></a></li>
@@ -285,7 +280,7 @@
             <li><a href="QA.html">退貨政策</a></li>
             <li><a href="QA.html">購物條款</a></li>
         </ul>
-        <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.</div>
+        <div class="copy-right">&copy;copy-right by nobody. | Please don't sue me.<br>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</div>
     </footer>
     <script>
         // 圖片切換

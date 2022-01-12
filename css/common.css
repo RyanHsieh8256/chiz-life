@@ -32,6 +32,9 @@ a{
 	color:#523239 ;
 	display: inline-block;
 }
+img{
+	vertical-align: bottom;
+}
 @media screen and (min-width:768px) {
 	h1{
 		font-size: 3.5rem;
@@ -182,9 +185,9 @@ header{
 	height: 100%;
 	border: none;
 
-	background:#fff78d;
+	background:none;
 	border-radius: 50%;
-	box-shadow: 0 0 5px 0 #0005;
+	/* box-shadow: 0 0 5px 0 #0005; */
 
 	position: relative;
 	vertical-align:middle;
@@ -199,7 +202,7 @@ header{
 	display: block;
 	width: 80%;
 	height: 5%;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin: auto;
 	background-color: #523239;
 	position: absolute;
@@ -233,14 +236,15 @@ header{
 	right:-500px;
 	z-index: 10;
 
+	
 	padding-top: 10px;
 
-	background: #fff78d;
+	background: #ffe395;
 	transition: 0.5s ease-in-out;
 	opacity: 0;
 	border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    box-shadow: 3px 3px 5px #0002;
 }
 
 .hambergur-menu>li+li{
@@ -249,6 +253,9 @@ header{
 	box-sizing: border-box;
 	border-bottom: #d1b235 1px solid;
 	/* border-top: #ffe88c 1px solid; */
+}
+.hambergur-menu>li:nth-child(2)~li{
+	border-top: #ddd .3px solid;
 }
 .hambergur-menu>li+li>a:hover{
 	color:#f15922;
@@ -492,6 +499,12 @@ footer{
 }
 .followus li{
 	margin-left: auto;
+}
+.footer-icon{
+	display: inline-block;
+	width: 30px;
+	vertical-align: middle;
+	color:#fff;
 }
 .policy{
 	width: 85%;

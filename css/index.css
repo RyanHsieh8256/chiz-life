@@ -94,19 +94,29 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
 	background:#f18622;
 }
+@media screen and (min-width:768px){
+	.tilte-cover{
+		font-size:8rem;
+		line-height: 1em;
+	}
+	.tilte-cover span{
+		font-size: 3rem;
+	}
+}
 @media screen and (min-width:992px) {
 	.slider-item{
 		height: 45vw;
 	}
 	.tilte-cover{
-		font-size: 10rem;
+		font-size: 8rem;
 		line-height: 1em;
 
 	}
 	.tilte-cover span{
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 }
+
 
 
 /* 熱門商品區塊 */

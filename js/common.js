@@ -23,6 +23,20 @@ $('#submenuSwitch').click(function(){
     }
 })
 
+$(function(){
+	$('#toTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#toTop').fadeIn(222);
+		} else {
+			$('#toTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+
+
 
 function init(){
     hambergurMenu.onclick = hambergurMenuControl;

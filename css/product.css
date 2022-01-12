@@ -167,20 +167,22 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 }
 
 /* 購買數量 */
+.order-num{
+	display: flex;
+}
 .order-num input,.order-num button{
-	line-height: 25px;
 	vertical-align: middle;
 	border: none;
+	box-sizing: border-box;
 }
 .order-num input{
-	width: 40%;
 	border-top: #333 1px solid;
 	border-bottom: #333 1px solid;
+	text-align: center;
 }
 .order-num button{
 	background-color: #fff;
 	font-size: 18px;
-	width: 5%;
 }
 .order-num button:nth-of-type(1){
 	border-top: #333 1px solid;
@@ -276,29 +278,66 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 	padding: 20px 0;
 	cursor: pointer;
 	box-sizing: border-box;
-	border-bottom:#aaa 1px solid;
+	border-bottom:#000 1px solid;
 }
-
+#spec{
+	border-bottom:#f15922 3px solid;
+}
 
 
 /* 商品細節暫定效果 */
 .product-detail-item{
 	padding: 20px 0;
-	width: 100%;
-	margin:50px auto;
-	height:300px ;
-	background-color: #ddd7;
-	border-radius: 20px;
-	text-align: center;
+	margin: auto;
 	display: none;
 }
 .detail-actived{
 	display: block;
 }
 
+#detail-spec{
+	width: 100%;
+	margin: auto;
+}
+.detail-pic{
+	width: 100%;
+}
+.detail-pic img{
+	width: 100%;
+}
 
-/* 商品細節暫定效果 */
 
+#detail-shipment{
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	margin: 30px auto;
+	padding: 20px 30px;
+	width: 85%;
+}
+#detail-shipment h4{
+	padding: 10px 0;
+	font-size: 1.2rem;
+}
+#detail-shipment ul{
+	padding: 0 30px;
+}
+#detail-shipment li{
+	list-style:disc;
+}
+
+#detail-notice{
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	margin: 30px auto;
+	padding: 20px 40px;
+	width: 85%;
+}
+#detail-notice ul{
+	margin: auto;
+}
+#detail-notice li{
+	list-style:disc;
+}
 
 
 
@@ -326,4 +365,38 @@ h2.other-product-title::after{
 .other-product{
 	width: 85%;
 	margin: auto;
+}
+
+/* 向上按鈕 */
+#toTop{
+	width: 45px;
+	height: 45px;
+	background-color: #fff8cf;
+	box-shadow: 0 0 5px 0 #0003;
+	color: #f15922;
+	position: fixed;
+	z-index: 100;
+	right: 5%;
+	bottom: 30px;
+	border-radius:50% ;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.to-top-icon{
+	width: 80%;
+	height: 80%;
+}
+
+
+@media screen and (min-width:992px){
+	
+	#detail-shipment{
+		width: 60%;
+	}
+	#detail-notice{
+		width: 60%;
+	}
 }

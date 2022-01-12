@@ -15,30 +15,26 @@
 	flex-grow:1 ;
 	margin: auto 5% auto 0;
 }
+
 main{
 	width: 100%;
 	margin: auto;
-	margin-top: 100px;
 	padding: 20px 0;
-	background-image: url(../images/all/big-bg-01333.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center bottom;
 
 }
 .contact-form{
 	width: 85%;
-	margin:50px auto;
-	display: flex;
-	padding-bottom: 20px;
-	align-items: center;
+	margin: auto;
+	font-family: 'Noto Serif TC','Hina Mincho', sans-serif;
+
 }
 .contact-form-txt{
-	width: 50%;
+	width: 100%;
+	margin: auto;
+	padding: 30px 0;
 }
 .contact-form-txt h2{
-	width: 50%;
+
 	border-bottom:1px  #523239 solid;
 	padding-bottom: 2%;
 }
@@ -46,28 +42,42 @@ main{
 	padding-top: 2%;
 }
 .contact-form form{
-	width: 50%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
+.contact-form form>span{
+	font-size: 1.1rem;
+	padding: 10px 0;
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="tel"],
 .contact-form input[type="email"],
 .contact-form textarea{
+	font-size: 1.2rem;
 	background: #fff;
 	box-shadow: 0 0 5px 0 #0005;
 	border: none;
 	border-radius: 3px;
-	width: 100%;
 	resize:none;
+	width: 70%;
+	padding: .3rem 1rem;
+}
+.contact-form textarea{
+	width: 90%;
 }
 .contact-form input[type="submit"]{
-	padding: 0.5em 1em;
+	padding: 10px 15px;
+	font-size: 1.3rem;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
 	background-color: #f15922;
-	/* 購物車按鈕字體 特別設定 */
-	font-size: 14px;
-	font-weight: 600;
+	width: 40%;
+	margin: 20px auto;
 }
 .contact-form input[type="submit"]:hover{
 	background-color: #c64507;
@@ -79,26 +89,33 @@ main{
 }
 .map{
 	width: 85%;
-	margin:50px auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-
+	margin: auto;
 }
 .addres{
-	width: 50%;
+	width: 100%;
+	padding: 30px 0;
 }
 .addres h2{
-	width: 50%;
-	border-bottom:1px  #523239 solid;
-	padding-bottom: 2%;
+	padding-bottom: 10px;
+}
+.addres h2::after{
+	content: "";
+	display: block;
+	border-bottom: #f15922 3px solid;
+	width: 50px;
+	height: 1em;
 }
 .addres li:nth-child(2){
 	padding-top: 2%;
 }
+.address-icon{
+	display: inline-block;
+	width: 30px;
+	vertical-align: middle;
+	color:#f15922;
+}
 .location{
-	width: 50%;
+	
 	position: relative;
 
 }
@@ -115,4 +132,13 @@ main{
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+@media screen and (min-width:992px) {
+	.contact-form-txt{
+		width: 70%;
+	}
+	.contact-form form{
+		width: 70%;
+	}
 }
