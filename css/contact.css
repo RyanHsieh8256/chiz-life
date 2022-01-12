@@ -60,7 +60,7 @@ main{
 	font-size: 1.2rem;
 	background: #fff;
 	box-shadow: 0 0 5px 0 #0005;
-	border: none;
+	border: #aaa 1px solid;
 	border-radius: 3px;
 	resize:none;
 	width: 70%;
@@ -75,7 +75,7 @@ main{
 	color: #fff;
 	border: none;
 	border-radius: 5px;
-	background-color: #f15922;
+	background: #f15922;
 	width: 40%;
 	margin: 20px auto;
 }
