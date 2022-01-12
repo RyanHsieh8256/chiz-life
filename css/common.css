@@ -491,14 +491,11 @@ footer{
 	flex-direction: column;
 }
 .followus li{
-	margin-right: 10%;
+	margin:5px 10% 5px auto;
 }
 .followus img{
 	width:40px;
 	height:40px;
-}
-.followus li{
-	margin-left: auto;
 }
 .footer-icon{
 	display: inline-block;
@@ -534,5 +531,8 @@ footer{
 	.followus{
 		flex-direction: row;
 		justify-content: flex-end;
+	}
+	.followus li{
+		margin:0 10% 0 auto;
 	}
 }
