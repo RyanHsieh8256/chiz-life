@@ -298,7 +298,6 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 }
 
 
-/* 商品細節暫定效果 */
 .product-detail-item{
 	padding: 20px 0;
 	margin: auto;
@@ -324,7 +323,7 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 	background-color: #f0f0f0;
 	border-radius: 10px;
 	margin: 30px auto;
-	padding: 20px 30px;
+	padding: 15px 0 15px 25px;
 	width: 85%;
 }
 #detail-shipment h4{
@@ -342,8 +341,8 @@ li.breadcrumb-item + li.breadcrumb-item::before{
 	background-color: #f0f0f0;
 	border-radius: 10px;
 	margin: 30px auto;
-	padding: 20px 40px;
 	width: 85%;
+	padding: 15px 0 15px 25px;
 }
 #detail-notice ul{
 	margin: auto;

@@ -19,15 +19,15 @@ $('#hambergurControl').click(function(){
         $(".hamburger-block").css({
             right: '7.5%' ,
             opacity: '1',
-            transform:'rotateY(0turn)'
+            maxWidth:'200px'
         });
     }else{
         $('#hambergurControl').addClass("hambergur-icon-open");
         $('#hambergurControl').removeClass("hambergur-icon-close");
         $(".hamburger-block").css({
-            right: '-300px' ,
+            right: '7.5%' ,
             opacity: '0',
-            transform:'rotateY(1turn)'
+            maxWidth:'0'
         })
     }
 })
