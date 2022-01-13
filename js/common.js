@@ -1,16 +1,38 @@
-let hambergurMenu = document.querySelector("#hambergurControl");
+// let hambergurMenu = document.querySelector("#hambergurControl");
 
-function hambergurMenuControl(){
-    if(hambergurMenu.className == "hambergur-icon-open"){
-        hambergurMenu.className = "hambergur-icon-close";
-        document.getElementsByClassName("hamburger-block")[0].style.right = "7.5%";
-        document.getElementsByClassName("hamburger-block")[0].style.opacity = "1";
+// function hambergurMenuControl(){
+//     if(hambergurMenu.className == "hambergur-icon-open"){
+//         hambergurMenu.className = "hambergur-icon-close";
+//         document.getElementsByClassName("hamburger-block")[0].style.right = "7.5%";
+//         document.getElementsByClassName("hamburger-block")[0].style.opacity = "1";
+//     }else{
+//         hambergurMenu.className = "hambergur-icon-open";
+//         document.getElementsByClassName("hamburger-block")[0].style.right = "-500px";
+//         document.getElementsByClassName("hamburger-block")[0].style.opacity = "0";
+//     }
+// }
+$('#hambergurControl').click(function(){
+    console.log($('#hambergurControl').attr('class'));
+    if($('#hambergurControl').attr('class') == "hambergur-icon-open"){
+        $('#hambergurControl').addClass("hambergur-icon-close");
+        $('#hambergurControl').removeClass("hambergur-icon-open");
+        $(".hamburger-block").css({
+            right: '7.5%' ,
+            opacity: '1',
+            transform:'rotateY(0turn)'
+        });
     }else{
-        hambergurMenu.className = "hambergur-icon-open";
-        document.getElementsByClassName("hamburger-block")[0].style.right = "-500px";
-        document.getElementsByClassName("hamburger-block")[0].style.opacity = "0";
+        $('#hambergurControl').addClass("hambergur-icon-open");
+        $('#hambergurControl').removeClass("hambergur-icon-close");
+        $(".hamburger-block").css({
+            right: '-300px' ,
+            opacity: '0',
+            transform:'rotateY(1turn)'
+        })
     }
-}
+})
+
+
 
 $('#submenuSwitch').click(function(){
     if($('.submenu').css('max-height') == '300px'){
@@ -38,9 +60,9 @@ $(function(){
 
 
 
-function init(){
-    hambergurMenu.onclick = hambergurMenuControl;
+// function init(){
+//     hambergurMenu.onclick = hambergurMenuControl;
 
-}
+// }
 
-window.addEventListener("load",init,false);
+// window.addEventListener("load",init,false);

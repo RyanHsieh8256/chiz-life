@@ -82,6 +82,10 @@
 	left: 0;
 	bottom: 0;
 }
+.brand-concept-txt p{
+	padding-top:20px ;
+}
+
 
 
 .brand-concept-pic{
@@ -180,9 +184,6 @@
 		flex-grow: 1;
 		height: 150px;
 		margin-left: 100px;
-	}
-	.brand-concept-txt p{
-		padding-top:20px ;
 	}
 	.brand-concept-pic{
 		position: absolute;

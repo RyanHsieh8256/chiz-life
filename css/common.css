@@ -3,9 +3,6 @@
 	font-family: 'Hina Mincho';
 	src: url('../fonts/HinaMincho-Regular.ttf')format("ttf");
   }
-html{
-	font-size: 14px;
-}
 body{
 	margin: 0 auto;
 	font-family: 'Noto Sans TC','Roboto',sans-serif;
@@ -82,8 +79,14 @@ header{
 	transition: 1.5s;
 }
 /* logo區 */
+.logo{
+	height: 100%;
+}
+.logo a{
+	height: 100%;
+}
 .logo img{
-	width: 120px;
+	height: 100%;
 	vertical-align: top;
 }
 
@@ -150,7 +153,8 @@ header{
 
 	cursor: pointer;
 }
-.hambergur-icon-open::before{
+.hambergur-icon-open::before,
+.hambergur-icon-open::after{
 	content:"" ;
 	display: block;
 	width: 80%;
@@ -158,26 +162,22 @@ header{
 	border-radius: 5px;
 	margin: auto;
 	background-color: #523239;
-	position: absolute;
-	bottom:75%;
 	left:10%;
+	position: absolute;
 	transform-origin: 50% 50%;
-	transition: 1s;
+}
+
+.hambergur-icon-open::before{
 	box-shadow: 0 8px 0 0#523239;
+	bottom:75%;
+	transition: transform .5s 0s,
+				box-shadow .5s .5s,
+				bottom .5s .5s;
 }
 .hambergur-icon-open::after{
-	content:"" ;
-	display: block;
-	width: 80%;
-	height:5%;
-	border-radius: 5px;
-	margin: auto;
-	background-color: #523239;
-	position: absolute;
 	bottom: 20%;
-	left:10%;
-	transform-origin: 50% 50%;
-	transition: 1s;
+	transition: transform .5s 0s,
+				bottom .5s .5s;
 }
 /*漢堡選單圖示-叉叉 */
 .hambergur-icon-close{
@@ -187,37 +187,24 @@ header{
 
 	background:none;
 	border-radius: 50%;
-	/* box-shadow: 0 0 5px 0 #0005; */
+	background:#ffe283;
+	box-shadow: 0 0 5px 0 #0005;
+	transform:rotateZ(-1turn);
 
 	position: relative;
 	vertical-align:middle;
 	z-index: 20;
 
-	transition: .5s;
+	transition:all 1s;
 
 	cursor: pointer;
 }
-.hambergur-icon-close::before{
-	content:"" ;
-	display: block;
-	width: 80%;
-	height: 5%;
-	border-radius: 10px;
-	margin: auto;
-	background-color: #523239;
-	position: absolute;
-	bottom: 45%;/* 距離底部50% - 高度一半 */
-	left:10%;
-	transform-origin: 50% 50%;
-	transition: 0.5s ease-in-out;
-	box-shadow: 0 0 0 0#52323900;
-	transform: rotate(0.125turn);
-}
+.hambergur-icon-close::before,
 .hambergur-icon-close::after{
 	content:"" ;
 	display: block;
 	width: 80%;
-	height:5%;
+	height: 5%;
 	border-radius: 5px;
 	margin: auto;
 	background-color: #523239;
@@ -225,24 +212,36 @@ header{
 	bottom: 45%;
 	left:10%;
 	transform-origin: 50% 50%;
-	transition: 0.5s ease-in-out;
+}
+
+
+.hambergur-icon-close::before{
+	box-shadow: 0 0 0 0#52323900;
+	transform: rotate(0.125turn);
+	transition: box-shadow .5s 0s,
+				bottom .5s 0s,
+	            transform .5s .5s;
+}
+.hambergur-icon-close::after{
 	transform: rotate(-0.125turn);
+	transition: bottom .5s 0s,
+				transform .5s .5s;
 }
 
 /* 漢堡選單 */
 .hamburger-block{
 	position: fixed;
 	top:60px;
-	right:-500px;
+	right:-300PX;
+	transition: right .5s 0s,opacity .5s 0s,transform 1s 0s;
+	transform:rotateY(1turn);
 	z-index: 10;
-
 	
 	padding-top: 10px;
 
-	background: #ffe395;
-	transition: 0.5s ease-in-out;
+	background: #ffe283;
 	opacity: 0;
-	border-radius: 3px;
+	border-radius: 5px;
     overflow: hidden;
     box-shadow: 3px 3px 5px #0002;
 }
@@ -265,7 +264,7 @@ header{
 }
 .submenu{
 	max-height: 300px;
-    transition: all .8s ease-out;
+    transition: all .9s ease-out;
 	background-color: #ff5100;
 	width: 100%;
 	overflow: hidden;
@@ -291,7 +290,7 @@ header{
 	vertical-align: middle;
 }
 #submenuControl{
-	transition: .6s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 
