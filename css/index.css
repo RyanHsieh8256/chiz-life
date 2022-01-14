@@ -42,15 +42,16 @@
 	font-size: 5rem;
 	line-height: 3rem;
 	color: #fff;
-	background-image: linear-gradient(0deg,#fff,#fff3 20%);
+	background-image: 
+		linear-gradient(0deg,#fff,#0002 30% 90%,#fff8cf17);
 	font-family:'Corinthia',Georgia, Times, 'Times New Roman', serif;
 
 	text-shadow:
-    0 0 5px rgba(247,155, 41,.1),
-    0 0 10px rgba(247,155, 41,1),
-    0 0 20px rgba(247,155, 41,1),
-    0 0 40px rgba(247,155, 41,1),
-	0 0 50px rgba(247,155, 41,1);
+		0 0 5px rgba(247,155, 41,.1),
+		0 0 10px rgba(247,155, 41,1),
+		0 0 20px rgba(247,155, 41,1),
+		0 0 40px rgba(247,155, 41,1),
+		0 0 50px rgba(247,155, 41,1);
 
     animation:shinning 2s 1s linear infinite;
 }

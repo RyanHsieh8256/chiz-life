@@ -10,7 +10,7 @@ body{
 	letter-spacing:0.1em;
 	line-height: 1.7;
 	color: #523239;
-	max-width: 1920px;
+	max-width: 1440px;
 }
 h1{
 	font-size: 3rem;
@@ -197,14 +197,15 @@ header{
 			#927a00 100%
 		);
 	box-shadow: 
-		0 0 3px 0 #4b3e01,
-		0 0 5px 0 #0005,
-		0 0 10px 0 #0002;
+		0 0 3px 0 #4b3e0105,
+		0 0 5px 0 #0002,
+		0 0 10px 0 #0001;
 	transform:rotateZ(1turn);
 	position: relative;
 	vertical-align:middle;
 	z-index: 20;
-	transition:all 1s;
+	transition:
+		transform 1s .5s;
 	cursor: pointer;
 }
 .hambergur-icon-close::before,

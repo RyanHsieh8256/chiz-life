@@ -88,12 +88,12 @@
 
 
 
-.brand-concept-pic{
+.brand-story-pic{
 	position: relative;
 	width:100%;
 	margin: auto;
 }
-.brand-concept-pic::before{
+.brand-story-pic::before{
 	content: "";
 	position: relative;
 	width: 100%;
@@ -101,7 +101,7 @@
 	padding-bottom: 50%;
 	display: block;
 }
-.brand-concept-pic img{
+.brand-story-pic img{
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -163,42 +163,44 @@
 	
 	.brand-concept-txt{
 		width: auto;
-		display: flex;
-		flex-direction: column;
 		font-size: 1.3rem;
 		margin: 0;
 		flex-grow: 1;
 		padding: 0 0 0 25px;
 	}
 	.brand-concept-txt h2{
-		display: flex;
-		align-items: flex-end;
-		position: relative;
 		font-size: 2rem;
-		padding: 0 0 20px 0;
+		padding: 50px 0 20px 0;
 	}
-	.brand-concept-txt h2::after{
+	.brand-concept::after{
 		content: "";
-		background-color: #fff8cf;
 		display:block;
-		flex-grow: 1;
-		height: 150px;
-		margin-left: 100px;
-	}
-	.brand-concept-pic{
-		position: absolute;
 		right: 0;
-		top: 30%;
-		width:40%;
-		transform: translate(0,-50%);
+		top: 10%;
+		background:#ffce96;
+		width: 10%;
+		height: 300px;
+		margin-top:50px;
 	}
-	.brand-concept-pic::before{
-		padding-bottom: 70%;
-	}
-	
+
 	.brand-story-block{
 		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
 	}
+
+	.brand-story-pic{
+		position: absolute;
+		width:40%;
+		right: 1%;
+		top: 50%;
+		height: 120%;
+		transform: translate(0,-50%);
+	}
+	.brand-story-pic::before{
+		padding-bottom: 60%;
+	}
+
 	.brand-story{
 		width: 50%;
 		margin-left: 7.5%;
