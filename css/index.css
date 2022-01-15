@@ -13,6 +13,7 @@
 	object-fit: cover;
 	object-position: center bottom;
 }
+
 .slider-item a{
 	height: 100%;
 	width: 100%;
@@ -107,6 +108,9 @@
 @media screen and (min-width:992px) {
 	.slider-item{
 		height: 45vw;
+	}
+	.slider-item-xl{
+		display: block;
 	}
 	.tilte-cover{
 		font-size: 8rem;

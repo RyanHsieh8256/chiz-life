@@ -1,16 +1,4 @@
-// let hambergurMenu = document.querySelector("#hambergurControl");
 
-// function hambergurMenuControl(){
-//     if(hambergurMenu.className == "hambergur-icon-open"){
-//         hambergurMenu.className = "hambergur-icon-close";
-//         document.getElementsByClassName("hamburger-block")[0].style.right = "7.5%";
-//         document.getElementsByClassName("hamburger-block")[0].style.opacity = "1";
-//     }else{
-//         hambergurMenu.className = "hambergur-icon-open";
-//         document.getElementsByClassName("hamburger-block")[0].style.right = "-500px";
-//         document.getElementsByClassName("hamburger-block")[0].style.opacity = "0";
-//     }
-// }
 $('#hambergurControl').click(function(){
     console.log($('#hambergurControl').attr('class'));
     if($('#hambergurControl').attr('class') == "hambergur-icon-open"){
@@ -45,6 +33,7 @@ $('#submenuSwitch').click(function(){
     }
 })
 
+// 捲到最上方按鈕
 $(function(){
 	$('#toTop').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 333);
@@ -58,11 +47,23 @@ $(function(){
 	}).scroll();
 });
 
-
-
-// function init(){
-//     hambergurMenu.onclick = hambergurMenuControl;
-
-// }
-
-// window.addEventListener("load",init,false);
+// 滑鼠特效
+$("body").mousemove(function(e){
+    let X = e.clientX;
+    let Y = e.clientY;
+    console.log(X,Y);
+    setTimeout(function(){
+    $('#mouseEffect').css({
+        top:Y + "px",
+        left:X + "px",
+        opacity:'1'
+    });
+    },50)
+    setTimeout(function(){
+        $('#mouseEffect2').css({
+        top:Y + "px",
+        left:X + "px",
+        opacity:'1'
+    });
+    },150)
+});

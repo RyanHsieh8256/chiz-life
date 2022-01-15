@@ -550,3 +550,59 @@ footer{
 		margin:0 10% 0 auto;
 	}
 }
+
+/* 點擊效果 */
+#mouseEffect{
+	width: 10px;
+	height: 10px;
+	position: fixed;
+	z-index: 1010;
+	transform: translate(-50%,-50%);
+	opacity: 1;
+	pointer-events:none;
+	transition: opacity .5s 0s;
+	background-color: #ff7b00;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+#mouseEffect2{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 1000;
+	transform: translate(-50%,-50%);
+	opacity: 1;
+	pointer-events:none;
+	transition: opacity .5s 0s;
+	box-sizing: border-box;
+}
+#mouseEffect2::before,#mouseEffect2::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: #ff7300 2px solid;
+	opacity: 0.6;
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	
+	
+	animation: beating 2s infinite ease-in-out;
+}
+  
+#mouseEffect2::after{
+	animation-delay: -1.0s;
+}
+  
+
+@keyframes beating {
+	0%, 100% { 
+	  transform: scale(0.0);
+	} 50% { 
+	  transform: scale(1.0);
+	}
+
+  }
