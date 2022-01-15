@@ -64,6 +64,14 @@ $("body").mousemove(function(e){
         top:Y + "px",
         left:X + "px",
         opacity:'1'
-    });
+        });
     },150)
+});
+$("body").click(function(e){
+    $('#mouseEffect').css({
+        opacity:'0'
+    });
+    $('#mouseEffect2').css({
+        opacity:'0'
+    });
 });
