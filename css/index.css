@@ -8,12 +8,12 @@
 }
 .slider-item{
 	width: 100vw;
-	height: 80vw;
+	height: 65vw;
 	overflow: hidden;
-	object-fit: cover;
-	object-position: center bottom;
 }
-
+.slider-item-lg{
+	display: none;
+}
 .slider-item a{
 	height: 100%;
 	width: 100%;
@@ -109,8 +109,11 @@
 	.slider-item{
 		height: 45vw;
 	}
-	.slider-item-xl{
-		display: block;
+	.slider-item-sm{
+		display: none;
+	}
+	.slider-item-lg{
+		display:block;
 	}
 	.tilte-cover{
 		font-size: 8rem;

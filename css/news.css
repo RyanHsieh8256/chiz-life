@@ -17,39 +17,38 @@
 	background-size: cover;
 	animation:bg-anima 30s 5s linear infinite;
 }
-@keyframes bg-anima{
-	0%{top: -100%;
-	}
-	100%{top: 100%;
-	}
-  }
+
 /* 主內容區塊 */
 .news-slider{
-	padding-top: 60px;
+	margin-top: 60px;
+	width: 100%;
+	height: 55vw;
 	position: relative;
-	width: 100%;
 }
-
-.owl-carousel{
-}
-
-.slider-item{
-	width: 100%;
+.slider-item-lg{
+	display: none;
 }
 .slider-item a{
 	width: 100%;
+	height: 55vw;
+	max-width: 1440px;
+	max-height: 648px;
 	overflow: hidden;
 }
 .slider-item img{
 	width: 100%;
-	vertical-align: top;
+	height: 100%;
+	object-position: center center;
+	object-fit: cover;
 }
 
 
 .owl-dots{
-	width: 100%;
 	position: absolute;
 	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
 }
 .owl-theme .owl-dots .owl-dot span{
 	box-shadow: 0 0 3px 0 #0009;
@@ -102,6 +101,7 @@
 .txt h3{
 	font-size: 1.3em;
 	text-align: center;
+	padding: 10px 0;
 }
 .txt p{
 	color: #555;
@@ -135,16 +135,20 @@
 	object-position: center center;
 }
 
-@media screen and (min-width:768px){
-	/* .news-list-item{
-		flex-wrap:nowrap;
-		justify-content:flex-start;
+@media screen and (min-width:992px){
+	.news-slider{
+		height: 35vw;
 	}
-	.pic{
-		width: 30%;
+	
+	.slider-item a{
+		height: 35vw;
 	}
-	.txt h3{
-		text-align:left;
-	} */
+	.slider-item-sm{
+		display: none;
+	}
+	.slider-item-lg{
+		display:block;
+	}
 
+	
 }
