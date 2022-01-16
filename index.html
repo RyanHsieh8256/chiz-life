@@ -330,7 +330,16 @@
         </div>
     </div>
     <div class="fixed-big-bg"></div>
-
+    <div id="loading">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/common.js"></script>
@@ -348,6 +357,11 @@
                 navBg.style.boxShadow = "none";
             }
         }
+        // 載入畫面
+        var $loading = $('#loading')
+        window.onload = () => {
+            $loading.hide()
+        };
     </script>
     <script>
         $(document).ready(function(){
