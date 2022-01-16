@@ -48,7 +48,19 @@ $(function(){
 });
 
 // 滑鼠特效
-$("body").mousemove(function(e){
+function isMobileDevice(){
+    let mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
+    let isMobileDevice=false
+    for(let i=0;i<mobileDevices.length;i++){
+        if(navigator.userAgent.match(mobileDevices[i])){
+            isMobileDevice=true
+        }
+    }
+    return isMobileDevice
+}
+
+if(isMobileDevice() != true){
+    $("body").mousemove(function(e){
     let X = e.clientX;
     let Y = e.clientY;
     console.log(X,Y);
@@ -66,12 +78,5 @@ $("body").mousemove(function(e){
         opacity:'1'
         });
     },150)
-});
-$("body").click(function(e){
-    $('#mouseEffect').css({
-        opacity:'0'
     });
-    $('#mouseEffect2').css({
-        opacity:'0'
-    });
-});
+};
