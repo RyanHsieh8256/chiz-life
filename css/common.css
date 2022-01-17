@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face {
-	font-family: 'Hina Mincho';
-	src: url('../fonts/HinaMincho-Regular.ttf')format("ttf");
-  }
 html{
 	font-size: 14px;
 }
