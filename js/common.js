@@ -83,5 +83,5 @@ if(isMobileDevice() != true){
 // // 載入畫面
 var $loading = $('#loading')
 window.onload = () => {
-    $loading.hide()
+    $loading.fadeOut()
 };
