@@ -3,6 +3,9 @@
 	font-family: 'Hina Mincho';
 	src: url('../fonts/HinaMincho-Regular.ttf')format("ttf");
   }
+html{
+	font-size: 14px;
+}
 body{
 	margin: 0 auto;
 	font-family: 'Noto Sans TC','Roboto',sans-serif;

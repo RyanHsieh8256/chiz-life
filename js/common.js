@@ -80,3 +80,8 @@ if(isMobileDevice() != true){
     },150)
     });
 };
+// // 載入畫面
+var $loading = $('#loading')
+window.onload = () => {
+    $loading.hide()
+};
