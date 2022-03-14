@@ -185,8 +185,8 @@ header{
 	height: 100%;
 	border: none;
 	border-radius: 50%;
-    background:#ffe283;
-		/* radial-gradient(
+    background:
+		radial-gradient(
 			circle at 35% 25%,
 			#ffffff 0,
 			#fff8cf 20%,
@@ -194,7 +194,7 @@ header{
 			#a78c09 90%,
 			#695f00 95%,
 			#927a00 100%
-		); */
+		);
 	box-shadow: 
 		0 0 3px 0 #4b3e01dd,
 		0 0 5px 0 #0002,
