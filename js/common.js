@@ -63,7 +63,6 @@ if(isMobileDevice() != true){
     $("body").mousemove(function(e){
     let X = e.clientX;
     let Y = e.clientY;
-    console.log(X,Y);
     setTimeout(function(){
     $('#mouseEffect').css({
         top:Y + "px",
@@ -80,8 +79,8 @@ if(isMobileDevice() != true){
     },150)
     });
 };
-// // 載入畫面
-var $loading = $('#loading')
-window.onload = () => {
-    $loading.fadeOut()
-};
+// 載入畫面
+// var $loading = $('#loading')
+// window.onload = () => {
+//     $loading.fadeOut()
+// };
